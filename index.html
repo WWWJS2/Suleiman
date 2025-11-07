@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suliman Alsuliman - Marketing & PR Specialist</title>
+    <title>سليمان السليمان - ملف الأعمال | أخصائي تسويق وعلاقات عامة</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
@@ -114,7 +114,7 @@
             color: white;
         }
 
-        /* Header Styles */
+        /* Header */
         header {
             background: rgba(26, 35, 126, 0.95);
             backdrop-filter: blur(10px);
@@ -210,7 +210,7 @@
             color: white;
         }
 
-        /* Hero Section */
+        /* Hero */
         .hero {
             padding: 180px 0 120px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
@@ -257,7 +257,7 @@
             flex-wrap: wrap;
         }
 
-        /* About Section */
+        /* About */
         .about {
             background-color: var(--light);
         }
@@ -306,204 +306,196 @@
             transform: translateY(-5px);
         }
 
-        /* Timeline */
-        .timeline-container {
-            position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .timeline {
-            position: relative;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            width: 4px;
-            background: linear-gradient(to bottom, var(--primary), var(--accent));
-            top: 0;
-            bottom: 0;
-            right: 50%;
-            transform: translateX(50%);
-        }
-
-        .timeline-item {
-            padding: 20px 0;
-            position: relative;
-            width: 100%;
-        }
-
-        .timeline-content {
-            width: 45%;
-            padding: 25px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-
-        .timeline-item:nth-child(odd) .timeline-content {
-            margin-right: 55%;
-        }
-
-        .timeline-item:nth-child(even) .timeline-content {
-            margin-left: 55%;
-        }
-
-        .timeline-content::before {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: var(--secondary);
-            border-radius: 50%;
-            top: 30px;
-        }
-
-        .timeline-item:nth-child(odd) .timeline-content::before {
-            left: -10px;
-        }
-
-        .timeline-item:nth-child(even) .timeline-content::before {
-            right: -10px;
-        }
-
-        .timeline-date {
-            font-weight: bold;
-            color: var(--secondary);
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .timeline-title {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
-
-        /* Certificates Section */
-        .certificates {
+        /* Campaigns */
+        .campaigns {
             background-color: var(--light);
+        }
+
+        .campaigns-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .campaign-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .campaign-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .campaign-header {
+            padding: 25px;
+            background: linear-gradient(45deg, var(--primary), var(--primary-light));
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .campaign-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .campaign-count {
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .campaign-description {
+            padding: 20px;
+            background: #f9f9f9;
+            border-bottom: 1px solid #eee;
+        }
+
+        .campaign-links {
+            max-height: 400px;
+            overflow-y: auto;
+            padding: 15px;
+        }
+
+        .campaign-link-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 12px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .campaign-link-item:hover {
+            background: #f0f0f0;
+            transform: translateX(-5px);
+        }
+
+        .campaign-link-item a {
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .campaign-link-item a:hover {
+            color: var(--secondary);
+        }
+
+        .link-number {
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-left: 10px;
+            flex-shrink: 0;
+        }
+
+        .link-icon {
+            color: var(--accent);
+            margin-left: 10px;
+            font-size: 1.2rem;
+        }
+
+        .link-text {
+            flex: 1;
+        }
+
+        /* Certificates */
+        .certificates {
+            background-color: var(--bg);
         }
 
         .certificates-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 30px;
         }
 
         .certificate-card {
             background-color: white;
             border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            padding: 25px;
             transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
         }
 
         .certificate-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-        }
-
-        .certificate-img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-
-        .certificate-card:hover .certificate-img {
-            transform: scale(1.05);
-        }
-
-        .certificate-info {
-            padding: 25px;
+            transform: translateY(-8px);
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
         }
 
         .certificate-info h3 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 10px;
             color: var(--primary);
         }
 
         .certificate-info p {
             color: var(--gray);
-            margin-bottom: 5px;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
         }
 
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .project-card {
-            background-color: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-        }
-
-        .project-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            transition: transform 0.5s;
-            background: linear-gradient(45deg, var(--primary-light), var(--accent));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 4rem;
-        }
-
-        .project-card:hover .project-img {
-            transform: scale(1.05);
-        }
-
-        .project-info {
-            padding: 25px;
-        }
-
-        .project-info h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
+        .certificate-tag {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: rgba(26, 35, 126, 0.08);
             color: var(--primary);
+            font-size: 0.8rem;
+            font-weight: 500;
         }
 
-        .project-info p {
-            color: var(--gray);
-            margin-bottom: 15px;
+        .certificate-actions {
+            margin-top: 15px;
         }
 
-        .project-link {
+        .certificate-link {
             display: inline-flex;
             align-items: center;
-            color: var(--secondary);
-            text-decoration: none;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 25px;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            font-size: 0.9rem;
             font-weight: 600;
-            transition: color 0.3s;
+            text-decoration: none;
+            transition: all 0.3s;
         }
 
-        .project-link i {
-            margin-right: 8px;
+        .certificate-link i {
+            font-size: 1rem;
         }
 
-        .project-link:hover {
-            color: var(--secondary-dark);
+        .certificate-link:hover {
+            background: var(--primary);
+            color: #fff;
         }
 
-        /* Contact Section */
+        /* Contact */
         .contact-content {
             display: flex;
             flex-wrap: wrap;
@@ -696,7 +688,7 @@
             color: rgba(255, 255, 255, 0.7);
         }
 
-        /* Language Styles */
+        /* EN direction tweaks */
         [lang="en"] {
             direction: ltr;
             text-align: left;
@@ -708,40 +700,9 @@
             transform: translateX(-50%);
         }
 
-        [lang="en"] .timeline::before {
-            right: auto;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        [lang="en"] .timeline-item:nth-child(odd) .timeline-content {
-            margin-right: 0;
-            margin-left: 55%;
-        }
-
-        [lang="en"] .timeline-item:nth-child(even) .timeline-content {
-            margin-left: 0;
-            margin-right: 55%;
-        }
-
-        [lang="en"] .timeline-item:nth-child(odd) .timeline-content::before {
-            left: auto;
-            right: -10px;
-        }
-
-        [lang="en"] .timeline-item:nth-child(even) .timeline-content::before {
-            right: auto;
-            left: -10px;
-        }
-
         [lang="en"] .contact-icon {
             margin-left: 0;
             margin-right: 20px;
-        }
-
-        [lang="en"] .project-link i {
-            margin-right: 0;
-            margin-left: 8px;
         }
 
         [lang="en"] .footer-links a i {
@@ -754,40 +715,25 @@
             left: 0;
         }
 
-        /* Responsive Styles */
-        @media (max-width: 1100px) {
-            .timeline::before {
-                right: 30px;
-            }
-
-            [lang="en"] .timeline::before {
-                right: auto;
-                left: 30px;
-            }
-
-            .timeline-content {
-                width: calc(100% - 80px);
-            }
-
-            .timeline-item:nth-child(odd) .timeline-content {
-                margin-right: 80px;
-            }
-
-            .timeline-item:nth-child(even) .timeline-content {
-                margin-left: 80px;
-            }
-
-            [lang="en"] .timeline-item:nth-child(odd) .timeline-content {
-                margin-right: 0;
-                margin-left: 80px;
-            }
-
-            [lang="en"] .timeline-item:nth-child(even) .timeline-content {
-                margin-left: 0;
-                margin-right: 80px;
-            }
+        [lang="en"] .campaign-link-item {
+            transform: translateX(0);
         }
 
+        [lang="en"] .campaign-link-item:hover {
+            transform: translateX(5px);
+        }
+
+        [lang="en"] .link-number {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+        [lang="en"] .link-icon {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+        /* Responsive */
         @media (max-width: 992px) {
             .hero h1 {
                 font-size: 2.8rem;
@@ -839,33 +785,12 @@
                 flex-direction: column;
             }
 
-            .timeline::before {
-                right: 20px;
-            }
-
-            [lang="en"] .timeline::before {
-                right: auto;
-                left: 20px;
-            }
-
-            .timeline-content {
-                width: calc(100% - 60px);
-            }
-
-            .timeline-item:nth-child(odd) .timeline-content,
-            .timeline-item:nth-child(even) .timeline-content {
-                margin-right: 60px;
-                margin-left: 0;
-            }
-
-            [lang="en"] .timeline-item:nth-child(odd) .timeline-content,
-            [lang="en"] .timeline-item:nth-child(even) .timeline-content {
-                margin-right: 0;
-                margin-left: 60px;
-            }
-
             .contact-form {
                 padding: 30px 20px;
+            }
+
+            .campaigns-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -933,13 +858,26 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#home" class="active ar-text">الرئيسية</a><a href="#home" class="en-text" style="display: none;">Home</a></li>
-                        <li><a href="#about" class="ar-text">عنّي</a><a href="#about" class="en-text" style="display: none;">About</a></li>
-                        <li><a href="#education" class="ar-text">التعليم</a><a href="#education" class="en-text" style="display: none;">Education</a></li>
-                        <li><a href="#experience" class="ar-text">الخبرات</a><a href="#experience" class="en-text" style="display: none;">Experience</a></li>
-                        <li><a href="#certificates" class="ar-text">الشهادات</a><a href="#certificates" class="en-text" style="display: none;">Certificates</a></li>
-                        <li><a href="#projects" class="ar-text">المشاريع</a><a href="#projects" class="en-text" style="display: none;">Projects</a></li>
-                        <li><a href="#contact" class="ar-text">اتصل بي</a><a href="#contact" class="en-text" style="display: none;">Contact</a></li>
+                        <li>
+                            <a href="#home" class="active ar-text">الرئيسية</a>
+                            <a href="#home" class="en-text" style="display: none;">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="ar-text">عنّي</a>
+                            <a href="#about" class="en-text" style="display: none;">About</a>
+                        </li>
+                        <li>
+                            <a href="#campaigns" class="ar-text">الحملات</a>
+                            <a href="#campaigns" class="en-text" style="display: none;">Campaigns</a>
+                        </li>
+                        <li>
+                            <a href="#certificates" class="ar-text">الشهادات</a>
+                            <a href="#certificates" class="en-text" style="display: none;">Certificates</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="ar-text">اتصل بي</a>
+                            <a href="#contact" class="en-text" style="display: none;">Contact</a>
+                        </li>
                         <li class="lang-switcher">
                             <button class="lang-btn" id="langToggle">
                                 <span class="ar-text">EN</span>
@@ -952,17 +890,17 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content animate__animated animate__fadeIn">
-                <h1 class="ar-text">سليمان عبدالمحسن صالح السليمان</h1>
-                <h1 class="en-text" style="display: none;">Suliman Abdulmohsen Alsuliman</h1>
+                <h1 class="ar-text">سليمان السليمان</h1>
+                <h1 class="en-text" style="display: none;">Suliman Alsuliman</h1>
                 <p class="ar-text">أخصائي تسويق وعلاقات عامة | خبرة في إدارة الحملات التسويقية والترويج على منصة تيك توك</p>
                 <p class="en-text" style="display: none;">Marketing & PR Specialist | Experience in managing marketing campaigns and TikTok promotions</p>
                 <div class="hero-btns">
-                    <a href="#projects" class="btn ar-text">مشاهدة أعمالي</a>
-                    <a href="#projects" class="btn en-text" style="display: none;">View My Work</a>
+                    <a href="#campaigns" class="btn ar-text">استعرض الحملات</a>
+                    <a href="#campaigns" class="btn en-text" style="display: none;">View Campaigns</a>
                     <a href="#contact" class="btn btn-outline ar-text">تواصل معي</a>
                     <a href="#contact" class="btn btn-outline en-text" style="display: none;">Contact Me</a>
                 </div>
@@ -970,7 +908,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
@@ -983,11 +921,27 @@
                 <div class="about-text animate__animated animate__fadeInLeft">
                     <h3 class="ar-text">أخصائي تسويق وعلاقات عامة</h3>
                     <h3 class="en-text" style="display: none;">Marketing & PR Specialist</h3>
-                    <p class="ar-text">أنا أخصائي تسويق وعلاقات عامة مع خبرة عملية في قيادة الحملات التسويقية والعلاقات العامة الرئيسية. شغوف ببناء حضور قوي للعلامة التجارية وإنشاء اتصالات هادفة مع الجمهور. معروف بالإبداع، والقدرة على التكيف، والالتزام القوي بتقديم التأثير.</p>
-                    <p class="en-text" style="display: none;">I am a Marketing and Public Relations Specialist with hands-on experience in leading major marketing and PR campaigns. Passionate about building strong brand presence and creating meaningful connections with audiences. Known for creativity, adaptability, and a strong commitment to delivering impact.</p>
-                    <p class="ar-text">أمتلك خبرة في إدارة جميع منصات التواصل الاجتماعي، وإنشاء المحتوى ونشره باستمرار. كما قمت بإدارة عمليات خدمة العملاء بالكامل وتطبيقات التوصيل. بالإضافة إلى ذلك، أشرفت وقادت عدة حملات رئيسية، بما في ذلك افتتاح فروع جديدة وإطلاق منتجات جديدة.</p>
-                    <p class="en-text" style="display: none;">I have experience in managing all social media platforms, consistently creating and publishing content. Also handled full customer service operations and delivery applications. Additionally, supervised and led several major campaigns, including the opening of new branches and the introduction of new products.</p>
-                    
+                    <p class="ar-text">
+                        أنا أخصائي تسويق وعلاقات عامة مع خبرة عملية في قيادة الحملات التسويقية والعلاقات العامة الرئيسية.
+                        شغوف ببناء حضور قوي للعلامة التجارية وإنشاء اتصالات هادفة مع الجمهور. معروف بالإبداع، والقدرة على التكيف،
+                        والالتزام القوي بتقديم التأثير.
+                    </p>
+                    <p class="en-text" style="display: none;">
+                        I am a Marketing and Public Relations Specialist with hands-on experience in leading major marketing and PR campaigns.
+                        Passionate about building strong brand presence and creating meaningful connections with audiences. Known for creativity,
+                        adaptability, and a strong commitment to delivering impact.
+                    </p>
+                    <p class="ar-text">
+                        أمتلك خبرة في إدارة جميع منصات التواصل الاجتماعي، وإنشاء المحتوى ونشره باستمرار. كما قمت بإدارة عمليات خدمة
+                        العملاء بالكامل وتطبيقات التوصيل. بالإضافة إلى ذلك، أشرفت وقادت عدة حملات رئيسية، بما في ذلك افتتاح فروع جديدة
+                        وإطلاق منتجات جديدة.
+                    </p>
+                    <p class="en-text" style="display: none;">
+                        I have experience in managing all social media platforms, consistently creating and publishing content. Also handled full
+                        customer service operations and delivery applications. Additionally, supervised and led several major campaigns, including
+                        the opening of new branches and the introduction of new products.
+                    </p>
+
                     <div class="skills">
                         <div class="skill ar-text">مهارات الإدارة</div>
                         <div class="skill en-text" style="display: none;">Management Skills</div>
@@ -1011,149 +965,99 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
+    <!-- Campaigns -->
+    <section id="campaigns" class="campaigns">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title ar-text">التعليم</h2>
-                <h2 class="section-title en-text" style="display: none;">Education</h2>
-                <p class="section-subtitle ar-text">رحلة تعليمي والدورات التدريبية التي حصلت عليها</p>
-                <p class="section-subtitle en-text" style="display: none;">My educational journey and training courses</p>
+                <h2 class="section-title ar-text">الحملات التسويقية</h2>
+                <h2 class="section-title en-text" style="display: none;">Marketing Campaigns</h2>
+                <p class="section-subtitle ar-text">الحملات التسويقية والمشاريع التي قمت بها على منصة تيك توك</p>
+                <p class="section-subtitle en-text" style="display: none;">Marketing campaigns and projects I've worked on TikTok</p>
             </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item animate__animated animate__fadeInUp">
-                        <div class="timeline-content">
-                            <span class="timeline-date">2022 - 2025</span>
-                            <h3 class="timeline-title ar-text">العلاقات العامة والاتصالات التسويقية</h3>
-                            <h3 class="timeline-title en-text" style="display: none;">Public Relations and Marketing Communications</h3>
-                            <p class="ar-text">جامعة الإمام محمد بن سعود الإسلامية</p>
-                            <p class="en-text" style="display: none;">Imam Muhammad Ibn Saud Islamic University</p>
-                            <p class="ar-text">بتقدير "جيد جداً" ومعدل تراكمي 3.98 من 5</p>
-                            <p class="en-text" style="display: none;">With "Very Good" grade and GPA 3.98 out of 5</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item animate__animated animate__fadeInUp">
-                        <div class="timeline-content">
-                            <span class="timeline-date">2024</span>
-                            <h3 class="timeline-title ar-text">استراتيجيات وسائل التواصل الاجتماعي</h3>
-                            <h3 class="timeline-title en-text" style="display: none;">Social Media Strategies</h3>
-                            <p class="ar-text">منصة كورسيرا</p>
-                            <p class="en-text" style="display: none;">Coursera Platform</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item animate__animated animate__fadeInUp">
-                        <div class="timeline-content">
-                            <span class="timeline-date">2025</span>
-                            <h3 class="timeline-title ar-text">تسويق المحتوى</h3>
-                            <h3 class="timeline-title en-text" style="display: none;">Content Marketing</h3>
-                            <p class="ar-text">أكاديمية SEMRUSH</p>
-                            <p class="en-text" style="display: none;">SEMRUSH Academy</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item animate__animated animate__fadeInUp">
-                        <div class="timeline-content">
-                            <span class="timeline-date">2024</span>
-                            <h3 class="timeline-title ar-text">التصوير الفوتوغرافي الرقمي المتقدم</h3>
-                            <h3 class="timeline-title en-text" style="display: none;">Advanced Digital Photography</h3>
-                            <p class="ar-text">منصة Alison</p>
-                            <p class="en-text" style="display: none;">Alison Platform</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="campaigns-grid" id="campaignsContainer">
+                <!-- Filled by JS -->
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title ar-text">الخبرات العملية</h2>
-                <h2 class="section-title en-text" style="display: none;">Work Experience</h2>
-                <p class="section-subtitle ar-text">خبراتي العملية في مجال التسويق والعلاقات العامة</p>
-                <p class="section-subtitle en-text" style="display: none;">My work experience in marketing and public relations</p>
-            </div>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item animate__animated animate__fadeInUp">
-                        <div class="timeline-content">
-                            <span class="timeline-date ar-text">أخصائي تسويق وعلاقات عامة</span>
-                            <span class="timeline-date en-text" style="display: none;">Marketing & PR Specialist</span>
-                            <h3 class="timeline-title">KAIF | 신희</h3>
-                            <p class="ar-text">إدارة منصات التوصيل ومراقبة تقارير المبيعات اليومية. الإشراف على خدمة العملاء لضمان الدعم السريع والمحترف. إنشاء ونشر محتوى وسائل التواصل الاجتماعي، بما في ذلك مقاطع الفيديو والصور. قيادة الحملات التسويقية والتنسيق مع المؤثرين لدعم إطلاق المنتجات وافتتاح الفروع، بالإضافة إلى الإشراف على حملات العلامات التجارية المتعددة.</p>
-                            <p class="en-text" style="display: none;">Managed delivery platforms and monitored daily sales reports. Oversaw customer service to ensure fast and professional support. Created and published social media content, including videos and photos. Led marketing campaigns and coordinated with influencers to support product launches and branch openings also supervised multiple Branding campaigns.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item animate__animated animate__fadeInUp">
-                        <div class="timeline-content">
-                            <span class="timeline-date ar-text">أخصائي تسويق وعلاقات عامة</span>
-                            <span class="timeline-date en-text" style="display: none;">Marketing & PR Specialist</span>
-                            <h3 class="timeline-title ar-text">متعض الجوهرة</h3>
-                            <h3 class="timeline-title en-text" style="display: none;">Matthag Aljawharah</h3>
-                            <p class="ar-text">إدارة منصات التوصيل ومراقبة تقارير المبيعات اليومية. الإشراف على خدمة العملاء لضمان الدعم السريع والمحترف. إنشاء ونشر محتوى وسائل التواصل الاجتماعي، بما في ذلك مقاطع الفيديو والصور. قيادة الحملات التسويقية والتنسيق مع المؤثرين لدعم إطلاق المنتجات وافتتاح الفروع.</p>
-                            <p class="en-text" style="display: none;">Managed delivery platforms and monitored daily sales reports. Oversaw customer service to ensure fast and professional support. Created and published social media content, including videos and photos. Led marketing campaigns and coordinated with influencers to support product launches and branch openings.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item animate__animated animate__fadeInUp">
-                        <div class="timeline-content">
-                            <span class="timeline-date ar-text">أخصائي تسويق</span>
-                            <span class="timeline-date en-text" style="display: none;">Marketing Specialist</span>
-                            <h3 class="timeline-title">ELCT And DOURMA</h3>
-                            <p class="ar-text">المسؤولية عن إدارة جميع منصات التواصل الاجتماعي، وإنشاء المحتوى ونشره باستمرار. كما قمت بإدارة عمليات خدمة العملاء بالكامل وتطبيقات التوصيل. بالإضافة إلى ذلك، أشرفت وقادت عدة حملات رئيسية، بما في ذلك افتتاح فروع جديدة وإطلاق منتجات جديدة.</p>
-                            <p class="en-text" style="display: none;">Responsible for managing all social media platforms, consistently creating and publishing content. Also handled full customer service operations and managed all delivery applications. Additionally, supervised and led several major campaigns, including the opening of new branches and the introduction of new products.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
+    <!-- Certificates -->
     <section id="certificates" class="certificates">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title ar-text">الشهادات والدورات</h2>
                 <h2 class="section-title en-text" style="display: none;">Certificates & Courses</h2>
-                <p class="section-subtitle ar-text">الشهادات والدورات التدريبية التي حصلت عليها</p>
-                <p class="section-subtitle en-text" style="display: none;">Certificates and training courses I have obtained</p>
+                <p class="section-subtitle ar-text">أهم الشهادات الأكاديمية والدورات المعتمدة التي حصلت عليها</p>
+                <p class="section-subtitle en-text" style="display: none;">Key academic certificates and accredited courses I have completed</p>
             </div>
             <div class="certificates-grid">
+                <!-- بكالوريوس -->
                 <div class="certificate-card animate__animated animate__fadeInUp">
-                    <img src="6.jpg" alt="شهادة التخرج" class="certificate-img">
                     <div class="certificate-info">
                         <h3 class="ar-text">شهادة البكالوريوس</h3>
                         <h3 class="en-text" style="display: none;">Bachelor's Degree</h3>
                         <p class="ar-text">العلاقات العامة والاتصال التسويقي - جامعة الإمام محمد بن سعود الإسلامية</p>
                         <p class="en-text" style="display: none;">Public Relations & Marketing Communications - Imam Mohammad Ibn Saud Islamic University</p>
-                        <p class="ar-text">بتقدير جيد جداً ومعدل تراكمي 3.98</p>
-                        <p class="en-text" style="display: none;">With Very Good grade and GPA 3.98</p>
+                        <p class="ar-text">بتقدير "جيد جداً" ومعدل تراكمي 3.98 من 5</p>
+                        <p class="en-text" style="display: none;">Grade: Very Good | GPA 3.98 / 5</p>
+                        <span class="certificate-tag ar-text">شهادة أكاديمية</span>
+                        <span class="certificate-tag en-text" style="display: none;">Academic Certificate</span>
+
+                        <div class="certificate-actions">
+                            <a href="6.pdf" target="_blank" class="certificate-link">
+                                <i class="fas fa-file-pdf"></i>
+                                <span class="ar-text">عرض الشهادة (PDF)</span>
+                                <span class="en-text" style="display: none;">View Certificate (PDF)</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- مهارات التأثير والإقناع -->
                 <div class="certificate-card animate__animated animate__fadeInUp">
-                    <img src="3.jpg" alt="شهادة مهارات التأثير والإقناع" class="certificate-img">
                     <div class="certificate-info">
                         <h3 class="ar-text">مهارات التأثير والإقناع</h3>
-                        <h3 class="en-text" style="display: none;">Influencing and Persuasion Skills</h3>
+                        <h3 class="en-text" style="display: none;">Influencing & Persuasion Skills</h3>
                         <p class="ar-text">منصة دروب - 2 ساعة تدريبية</p>
                         <p class="en-text" style="display: none;">Doroob Platform - 2 Training Hours</p>
-                        <p class="ar-text">تم الإصدار: 2024-02-08</p>
+                        <p class="ar-text">تاريخ الإصدار: 2024-02-08</p>
                         <p class="en-text" style="display: none;">Issue Date: 2024-02-08</p>
+                        <span class="certificate-tag ar-text">تطوير مهني</span>
+                        <span class="certificate-tag en-text" style="display: none;">Professional Development</span>
+
+                        <div class="certificate-actions">
+                            <a href="3.pdf" target="_blank" class="certificate-link">
+                                <i class="fas fa-file-pdf"></i>
+                                <span class="ar-text">عرض الشهادة (PDF)</span>
+                                <span class="en-text" style="display: none;">View Certificate (PDF)</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- المهارات الإعلامية -->
                 <div class="certificate-card animate__animated animate__fadeInUp">
-                    <img src="4.jpg" alt="شهادة المهارات الإعلامية" class="certificate-img">
                     <div class="certificate-info">
                         <h3 class="ar-text">المهارات الإعلامية</h3>
                         <h3 class="en-text" style="display: none;">Media Skills</h3>
                         <p class="ar-text">منصة دروب - 1 ساعة تدريبية</p>
                         <p class="en-text" style="display: none;">Doroob Platform - 1 Training Hour</p>
-                        <p class="ar-text">تم الإصدار: 2022-11-08</p>
+                        <p class="ar-text">تاريخ الإصدار: 2022-11-08</p>
                         <p class="en-text" style="display: none;">Issue Date: 2022-11-08</p>
+                        <span class="certificate-tag ar-text">مهارات إعلامية</span>
+                        <span class="certificate-tag en-text" style="display: none;">Media Skills</span>
+
+                        <div class="certificate-actions">
+                            <a href="4.pdf" target="_blank" class="certificate-link">
+                                <i class="fas fa-file-pdf"></i>
+                                <span class="ar-text">عرض الشهادة (PDF)</span>
+                                <span class="en-text" style="display: none;">View Certificate (PDF)</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- تصريح رائد أعمال (وصف فقط بدون ملف) -->
                 <div class="certificate-card animate__animated animate__fadeInUp">
-                    <img src="8.jpg" alt="تصريح رائد أعمال" class="certificate-img">
                     <div class="certificate-info">
                         <h3 class="ar-text">تصريح رائد أعمال</h3>
                         <h3 class="en-text" style="display: none;">Entrepreneur License</h3>
@@ -1161,28 +1065,15 @@
                         <p class="en-text" style="display: none;">Sales Management & Activation</p>
                         <p class="ar-text">صالح من: 2025-06-29 إلى: 2026-09-02</p>
                         <p class="en-text" style="display: none;">Valid from: 2025-06-29 to: 2026-09-02</p>
+                        <span class="certificate-tag ar-text">تصريح مهني</span>
+                        <span class="certificate-tag en-text" style="display: none;">Professional License</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title ar-text">المشاريع والحملات</h2>
-                <h2 class="section-title en-text" style="display: none;">Projects & Campaigns</h2>
-                <p class="section-subtitle ar-text">الحملات التسويقية والمشاريع التي قمت بها على منصة تيك توك</p>
-                <p class="section-subtitle en-text" style="display: none;">Marketing campaigns and projects I've worked on TikTok</p>
-            </div>
-            <div class="projects-grid">
-                <!-- Campaigns will be dynamically loaded here -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
@@ -1278,21 +1169,44 @@
                     <h3 class="ar-text">روابط سريعة</h3>
                     <h3 class="en-text" style="display: none;">Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#home" class="ar-text"><i class="fas fa-chevron-left"></i> الرئيسية</a><a href="#home" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="#about" class="ar-text"><i class="fas fa-chevron-left"></i> عنّي</a><a href="#about" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> About</a></li>
-                        <li><a href="#education" class="ar-text"><i class="fas fa-chevron-left"></i> التعليم</a><a href="#education" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> Education</a></li>
-                        <li><a href="#experience" class="ar-text"><i class="fas fa-chevron-left"></i> الخبرات</a><a href="#experience" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> Experience</a></li>
-                        <li><a href="#certificates" class="ar-text"><i class="fas fa-chevron-left"></i> الشهادات</a><a href="#certificates" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> Certificates</a></li>
-                        <li><a href="#projects" class="ar-text"><i class="fas fa-chevron-left"></i> المشاريع</a><a href="#projects" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li>
+                            <a href="#home" class="ar-text"><i class="fas fa-chevron-left"></i> الرئيسية</a>
+                            <a href="#home" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="ar-text"><i class="fas fa-chevron-left"></i> عنّي</a>
+                            <a href="#about" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> About</a>
+                        </li>
+                        <li>
+                            <a href="#campaigns" class="ar-text"><i class="fas fa-chevron-left"></i> الحملات</a>
+                            <a href="#campaigns" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> Campaigns</a>
+                        </li>
+                        <li>
+                            <a href="#certificates" class="ar-text"><i class="fas fa-chevron-left"></i> الشهادات</a>
+                            <a href="#certificates" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> Certificates</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="ar-text"><i class="fas fa-chevron-left"></i> اتصل بي</a>
+                            <a href="#contact" class="en-text" style="display: none;"><i class="fas fa-chevron-right"></i> Contact</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3 class="ar-text">اتصل بي</h3>
                     <h3 class="en-text" style="display: none;">Contact Me</h3>
                     <ul class="footer-links">
-                        <li><a href="tel:+966505127199" class="ar-text"><i class="fas fa-phone"></i> +966-50-512-7199</a><a href="tel:+966505127199" class="en-text" style="display: none;"><i class="fas fa-phone"></i> +966-50-512-7199</a></li>
-                        <li><a href="mailto:Alsuliman.sas@gmail.com" class="ar-text"><i class="fas fa-envelope"></i> Alsuliman.sas@gmail.com</a><a href="mailto:Alsuliman.sas@gmail.com" class="en-text" style="display: none;"><i class="fas fa-envelope"></i> Alsuliman.sas@gmail.com</a></li>
-                        <li><a href="#" class="ar-text"><i class="fas fa-map-marker-alt"></i> الرياض، السعودية</a><a href="#" class="en-text" style="display: none;"><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</a></li>
+                        <li>
+                            <a href="tel:+966505127199" class="ar-text"><i class="fas fa-phone"></i> +966-50-512-7199</a>
+                            <a href="tel:+966505127199" class="en-text" style="display: none;"><i class="fas fa-phone"></i> +966-50-512-7199</a>
+                        </li>
+                        <li>
+                            <a href="mailto:Alsuliman.sas@gmail.com" class="ar-text"><i class="fas fa-envelope"></i> Alsuliman.sas@gmail.com</a>
+                            <a href="mailto:Alsuliman.sas@gmail.com" class="en-text" style="display: none;"><i class="fas fa-envelope"></i> Alsuliman.sas@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ar-text"><i class="fas fa-map-marker-alt"></i> الرياض، السعودية</a>
+                            <a href="#" class="en-text" style="display: none;"><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1304,351 +1218,377 @@
     </footer>
 
     <script>
-        // Campaigns data from Excel file
+        // حملات تيك توك
         const campaigns = [
-            { name: { ar: "كايف", en: "KAIF" }, links: [
-                "https://vt.tiktok.com/ZSDWXwNXg/", "https://vt.tiktok.com/ZSDvVJjQX/", "https://vt.tiktok.com/ZSURrgWyX/", 
-                "https://vt.tiktok.com/ZSDvVkFMn/", "https://vt.tiktok.com/ZSDWXBvfS/", "https://vt.tiktok.com/ZSDvVfVUv/",
-                "https://vt.tiktok.com/ZSDvVusqg/", "https://vt.tiktok.com/ZSDtUgL1T/", "https://vt.tiktok.com/ZSDtUWyqE/",
-                "https://vt.tiktok.com/ZSUmkTdPC/", "https://vt.tiktok.com/ZSDnPpPoL/", "https://vt.tiktok.com/ZSDWXCJt5/",
-                "https://vt.tiktok.com/ZSDWXpoHy/", "https://vt.tiktok.com/ZSDWnLB5q/", "https://vt.tiktok.com/ZSDW4emG5/",
-                "https://vt.tiktok.com/ZSD76yQ9h/", "https://vt.tiktok.com/ZSURrsa7j/", "https://vt.tiktok.com/ZSDW4FgvW/",
-                "https://vt.tiktok.com/ZSDVsoE1u/", "https://vt.tiktok.com/ZSDWKKSFf/", "https://vt.tiktok.com/ZSDWgRu77/",
-                "https://vt.tiktok.com/ZSDWVBJGd/", "https://vt.tiktok.com/ZSDW4DHbR/", "https://vt.tiktok.com/ZSDW4jSGb/",
-                "https://vt.tiktok.com/ZSUmk9kH4/", "https://vt.tiktok.com/ZSUmkHkPq/", "https://vt.tiktok.com/ZSDty1mpr/",
-                "https://vt.tiktok.com/ZSUmkVn99/", "https://vt.tiktok.com/ZSUmk78PU/", "https://vt.tiktok.com/ZSDWVueoj/",
-                "https://vt.tiktok.com/ZSU95aQfy/", "https://vt.tiktok.com/ZSDtyBL22/", "https://vt.tiktok.com/ZSDtUTeRG/",
-                "https://vt.tiktok.com/ZSDvVE3j9/", "https://vt.tiktok.com/ZSUVqMBst/", "https://vt.tiktok.com/ZSDvVtCaj/",
-                "https://vt.tiktok.com/ZSDtydptJ/", "https://vt.tiktok.com/ZSDWV6rCH/", "https://vt.tiktok.com/ZSDWVrSL6/",
-                "https://vt.tiktok.com/ZSUtoMnCb/", "https://vt.tiktok.com/ZSD7j8EQc/", "https://vt.tiktok.com/ZSDty23MJ/",
-                "https://vt.tiktok.com/ZSDvVw2eG/", "https://vt.tiktok.com/ZSD7kUfct/", "https://vt.tiktok.com/ZSURro8TJ/",
-                "https://vt.tiktok.com/ZSDtydfKt/", "https://vt.tiktok.com/ZSDWV4KMM/", "https://vt.tiktok.com/ZSUVqBDU8/",
-                "https://vt.tiktok.com/ZSDWVonbN/", "https://vt.tiktok.com/ZSDtyJp3J/", "https://vt.tiktok.com/ZSDtyJG4R/",
-                "https://vt.tiktok.com/ZSDvbkemd/", "https://vt.tiktok.com/ZSUmknhTK/", "https://vt.tiktok.com/ZSDtyRvoW/",
-                "https://vt.tiktok.com/ZSUVqjScr/", "https://vt.tiktok.com/ZSULp3WJy/", "https://vt.tiktok.com/ZSDWVWo2t/",
-                "https://vt.tiktok.com/ZSUmfGKBT/", "https://vt.tiktok.com/ZSDtyM7PH/", "https://vt.tiktok.com/ZSDtUTkcs/",
-                "https://vt.tiktok.com/ZSDWVK19K/", "https://vt.tiktok.com/ZSUmBUMYp/", "https://vt.tiktok.com/ZSDtyM7PH/",
-                "https://vt.tiktok.com/ZSUVqQR7g/", "https://vt.tiktok.com/ZSDWVQSy1/", "https://vt.tiktok.com/ZSDWqyyup/",
-                "https://vt.tiktok.com/ZSUmBNX7a/", "https://vt.tiktok.com/ZSUVqa5uT/", "https://vt.tiktok.com/ZSDtymbk7/",
-                "https://vt.tiktok.com/ZSDvqf26T/", "https://vt.tiktok.com/ZSDtyq3nB/", "https://vt.tiktok.com/ZSUmBYvba/",
-                "https://vt.tiktok.com/ZSD7eqNNo/", "https://vt.tiktok.com/ZSDvq6FBC/", "https://vt.tiktok.com/ZSDcFymsK/",
-                "https://vt.tiktok.com/ZSUtoMxQF/", "https://vt.tiktok.com/ZSDWq2hqY/", "https://vt.tiktok.com/ZSDtyHLqM/",
-                "https://vt.tiktok.com/ZSDtymrxB/", "https://vt.tiktok.com/ZSUto9Dku/", "https://vt.tiktok.com/ZSUmBUhLR/",
-                "https://vt.tiktok.com/ZSDvqP1af/", "https://vt.tiktok.com/ZSUmA8fxp/", "https://vt.tiktok.com/ZSDWqPmHR/",
-                "https://vt.tiktok.com/ZSDtytJXY/", "https://vt.tiktok.com/ZSD7mjx7t/", "https://vt.tiktok.com/ZSUHco2r2/",
-                "https://vt.tiktok.com/ZSUtojkEe/", "https://vt.tiktok.com/ZSDtyqYqn/", "https://vt.tiktok.com/ZSD76xoes/",
-                "https://vt.tiktok.com/ZSURhD88K/", "https://vt.tiktok.com/ZSDty4qmn/", "https://vt.tiktok.com/ZSD7jkFoB/",
-                "https://vt.tiktok.com/ZSUVbb8ap/", "https://vt.tiktok.com/ZSUVbesVy/", "https://vt.tiktok.com/ZSUVqbo1G/",
-                "https://vt.tiktok.com/ZSUsB4yN4/", "https://vt.tiktok.com/ZSUsjC5Fp/", "https://vt.tiktok.com/ZSUbvm9QN/",
-                "https://vt.tiktok.com/ZSUbvxtYh/", "https://vt.tiktok.com/ZSUVbe11q/", "https://vt.tiktok.com/ZSUVqEmLP/",
-                "https://vt.tiktok.com/ZSUHccH3U/", "https://vt.tiktok.com/ZSUVqGKj5/", "https://vt.tiktok.com/ZSUsrSxkQ/",
-                "https://vt.tiktok.com/ZSUVqKdYX/", "https://vt.tiktok.com/ZSUVb5s9H/", "https://vt.tiktok.com/ZSUVb5Yvs/",
-                "https://vt.tiktok.com/ZSUmBa6T5/", "https://vt.tiktok.com/ZSUmBm88a/", "https://vt.tiktok.com/ZSUmBCUaM/",
-                "https://vt.tiktok.com/ZSUVb599h/", "https://vt.tiktok.com/ZSUbvkNAK/", "https://vt.tiktok.com/ZSUVghLBT/",
-                "https://vt.tiktok.com/ZSUbvyDmp/", "https://vt.tiktok.com/ZSUshwLtj/", "https://vt.tiktok.com/ZSUbvm9QN/",
-                "https://vt.tiktok.com/ZSUbvfvrM/", "https://vt.tiktok.com/ZSUbvh184/", "https://vt.tiktok.com/ZSUtoWWxJ/",
-                "https://vt.tiktok.com/ZSUHTr16E/", "https://vt.tiktok.com/ZSUgR183v/", "https://vt.tiktok.com/ZSUuDkkQq/",
-                "https://vt.tiktok.com/ZSUVp8VwW/", "https://vt.tiktok.com/ZSUs6oE9A/", "https://vt.tiktok.com/ZSUskd19L/",
-                "https://vt.tiktok.com/ZSUskRtEv/", "https://vt.tiktok.com/ZSUshp9wU/", "https://vt.tiktok.com/ZSUsgHXsY/",
-                "https://vt.tiktok.com/ZSUn1dxvq/", "https://vt.tiktok.com/ZSUn1r71m/", "https://vt.tiktok.com/ZSUn1NTHE/"
-            ]},
-            { name: { ar: "رمضان ELCT 2025", en: "Ramadan ELCT 2025" }, links: [
-                "https://vt.tiktok.com/ZSMQYNxJY/", "https://www.tiktok.com/@nadaa_ii1/video/7478777155619507463", 
-                "https://vt.tiktok.com/ZSMxcPwob/", "https://vt.tiktok.com/ZSMQKvtC4/", 
-                "https://www.tiktok.com/@modi.k1/video/7479066921938193682", "https://vt.tiktok.com/ZSMQENkAE/",
-                "https://vt.tiktok.com/ZSMCYq3eX/", "https://vt.tiktok.com/ZSMxKcdft/",
-                "https://www.tiktok.com/@riyadhxvibes/photo/7479148200671186183", "https://vt.tiktok.com/ZSMx3KnVx/",
-                "https://vt.tiktok.com/ZSMCQ41Hr/", "https://www.tiktok.com/@sa.mohammed71/video/7478811170271481104",
-                "https://vt.tiktok.com/ZSMCUyFcM/", "https://vt.tiktok.com/ZSMQrBW4m/", "https://vt.tiktok.com/ZSMCQYmxp/",
-                "https://vt.tiktok.com/ZSMQr4L19/", "https://www.tiktok.com/@bloggers_trund/video/7479386010497994005",
-                "https://vt.tiktok.com/ZSMQea8m2/", "https://www.tiktok.com/@r9lia?_t=ZS-8uUZSU3DSKn&_r=1",
-                "https://vt.tiktok.com/ZSMcDUYS4/", "https://vt.tiktok.com/ZSMQEaSq8/",
-                "https://www.tiktok.com/@almahra2030/video/7478774580618775815", "https://www.tiktok.com/@itseiii1/video/7478441630027009288",
-                "https://www.tiktok.com/@8ath1/video/7478844538237242632", "https://vt.tiktok.com/ZSMQKPexT/",
-                "https://vt.tiktok.com/ZSMQe1r1T/", "https://vt.tiktok.com/ZSM4cDb4k/", "https://www.tiktok.com/@3lee7/video/7479525536285347080",
-                "https://vt.tiktok.com/ZSMXmUnWF/", "https://www.tiktok.com/@iiloyoi/video/7478473171755191568",
-                "https://vt.tiktok.com/ZSMcDwPEu/", "https://www.tiktok.com/@aa.wtq/video/7478479814937054482",
-                "https://vt.tiktok.com/ZSMVLV3eB/", "https://vt.tiktok.com/ZSMCQ5hNs/", "https://vt.tiktok.com/ZSMpfaJNW/",
-                "https://vt.tiktok.com/ZSMQrWFXk/", "https://vt.tiktok.com/ZSMQL2D5D/", "https://www.tiktok.com/@mlal138/video/7478781080762617096",
-                "https://vt.tiktok.com/ZSMQEdwyW/", "https://vt.tiktok.com/ZSMQNnS87/", "https://vt.tiktok.com/ZSMxKWHQR/",
-                "https://vt.tiktok.com/ZSMxTnhx1/", "https://vt.tiktok.com/ZSMqmLUG6/", "https://vt.tiktok.com/ZSMQKvMcg/",
-                "https://www.tiktok.com/@noura_f92/video/7478890375902481685", "https://vt.tiktok.com/ZSMQKKca7/", "https://vt.tiktok.com/ZSMXEVhLo/",
-                "https://vt.tiktok.com/ZSMQK3RUb/", "https://vt.tiktok.com/ZSMCQBdY9/", "https://vt.tiktok.com/ZSMCQrwQL/",
-                "https://vt.tiktok.com/ZSMCPFx41/", "https://www.tiktok.com/@77eill/video/7479501051847052552", "https://vt.tiktok.com/ZSMcyPAW8/",
-                "https://vt.tiktok.com/ZSMCqt3qu/", "https://www.tiktok.com/@ui.u60/video/7479183485358329096", "https://vt.tiktok.com/ZSM4Jd547/",
-                "https://www.tiktok.com/@shihanaha11/video/7479561744017296648", "https://www.tiktok.com/@99imi/video/7479560530563271943",
-                "https://www.tiktok.com/@lovelybratz1/video/7479221622910504199", "https://vt.tiktok.com/ZSMXbeRhJ/", "https://vt.tiktok.com/ZSMXqwkvB/",
-                "https://vt.tiktok.com/ZSMXbuCHx/", "https://www.tiktok.com/@iiox0l/video/7479477169459072264", "https://vt.tiktok.com/ZSMVFehQa/",
-                "https://vt.tiktok.com/ZSMXGUcRx/", "https://vt.tiktok.com/ZSMX7rUpr/", "https://vt.tiktok.com/ZSMphHbK8/",
-                "https://vt.tiktok.com/ZSMXnT3EJ/", "https://vt.tiktok.com/ZSMXvoM3e/", "https://vt.tiktok.com/ZSMX3GLt2/",
-                "https://www.tiktok.com/@tahani..0/video/7479596602349440263", "https://vt.tiktok.com/ZSMVdAxf5/", "https://www.tiktok.com/@ilamma/video/7479614361804213522",
-                "https://vt.tiktok.com/ZSMph4DWX/", "https://vt.tiktok.com/ZSMVkedKt/", "https://vt.tiktok.com/ZSMVkm8Qa/",
-                "https://vt.tiktok.com/ZSMp47pgx/", "https://vt.tiktok.com/ZSMqGaUDE/", "https://www.tiktok.com/@al11o3_/video/7481115900079361287",
-                "https://vt.tiktok.com/ZSMpmL6ng/", "https://www.tiktok.com/@b.m.m.9/video/7481419467927407880", "https://www.tiktok.com/@merawz/video/7481432052328385800",
-                "https://www.tiktok.com/@sh_m881/video/7479163266174930194", "https://vt.tiktok.com/ZSMQEF3Fq/", "https://vt.tiktok.com/ZSMQrQ4R1/",
-                "https://www.tiktok.com/@03r.y/video/7478492161458277640", "https://www.tiktok.com/@noo_rhf16/video/7478818297970969864",
-                "https://vt.tiktok.com/ZSM48D85W/", "https://www.tiktok.com/@rammed20/video/7478415216229797127", "https://www.tiktok.com/@lama9.4/video/7478480907511418120",
-                "https://vt.tiktok.com/ZSMQE6Tce/", "https://vt.tiktok.com/ZSMQr4KgK/", "https://vt.tiktok.com/ZSMQEysyW/",
-                "https://vt.tiktok.com/ZSMQTqrYH/", "https://vt.tiktok.com/ZSMQoonch/", "https://vt.tiktok.com/ZSMCQFqfA/",
-                "https://vt.tiktok.com/ZSMCQyagR/", "https://vt.tiktok.com/ZSMCQu8p4/"
-            ]},
-            { name: { ar: "SEEN", en: "SEEN" }, links: [
-                "https://vt.tiktok.com/ZSMcPWP1x/", "https://vt.tiktok.com/ZSMc5JDdC/", "https://vt.tiktok.com/ZSMcPWM1S/",
-                "https://vt.tiktok.com/ZSMcP7wbj/", "https://vt.tiktok.com/ZSMc5r7gY/", "https://vt.tiktok.com/ZSMc5Ffsu/",
-                "https://vt.tiktok.com/ZSM3UPeBB/", "https://vt.tiktok.com/ZSMc5x8eX/", "https://vt.tiktok.com/ZSMc5Aade/",
-                "https://vt.tiktok.com/ZSMwnR4cJ/", "https://vt.tiktok.com/ZSM3URA8n/", "https://vt.tiktok.com/ZSMc5adaH/",
-                "https://vt.tiktok.com/ZSMc5rrxw/", "https://vt.tiktok.com/ZSMc5jc1N/", "https://vt.tiktok.com/ZSM3uPm8c/",
-                "https://vt.tiktok.com/ZSMwnn2df/", "https://vt.tiktok.com/ZSM3AoSg3/", "https://vt.tiktok.com/ZSMc5ffJ5/",
-                "https://vt.tiktok.com/ZSMc5aUp8/", "https://vt.tiktok.com/ZSMc5hKhq/", "https://vt.tiktok.com/ZSMc596jp/",
-                "https://vt.tiktok.com/ZSMc5F5Q9/", "https://vt.tiktok.com/ZSMc52eHV/", "https://vt.tiktok.com/ZSMc5fGDQ/",
-                "https://vt.tiktok.com/ZSMc5P7Cc/", "https://vt.tiktok.com/ZSMwnkGTC/", "https://vt.tiktok.com/ZSM3UpudX/",
-                "https://vt.tiktok.com/ZSMc5UcUv/"
-            ]},
-            { name: { ar: "فيش", en: "Feesh" }, links: [
-                "https://vt.tiktok.com/ZSkXW4pQt/", "https://vt.tiktok.com/ZSkXTVLeK/", "https://vt.tiktok.com/ZSk4Js68k/",
-                "https://vt.tiktok.com/ZSk41t8FW/", "https://vt.tiktok.com/ZSk4R5AHh/", "https://vt.tiktok.com/ZSkTJJXLr/",
-                "https://vt.tiktok.com/ZSkmyquDC/", "https://vt.tiktok.com/ZSkmf2hNp/", "https://vt.tiktok.com/ZSkmfNxcr/",
-                "https://vt.tiktok.com/ZSkmPLDQ8/", "https://vt.tiktok.com/ZSkm5pcUg/", "https://vt.tiktok.com/ZSkma1pHG/",
-                "https://vt.tiktok.com/ZSkm5GPwj/", "https://vt.tiktok.com/ZSkm53rYe/", "https://vt.tiktok.com/ZSkm5VPL9/",
-                "https://vt.tiktok.com/ZSkTJePg3/", "https://vt.tiktok.com/ZSkma8164/", "https://vt.tiktok.com/ZSkGdheFg/",
-                "https://vt.tiktok.com/ZSkma8hHq/", "https://vt.tiktok.com/ZSkGdQrgN/", "https://vt.tiktok.com/ZSkm5c4Hj/",
-                "https://vt.tiktok.com/ZSkma6h8j/", "https://vt.tiktok.com/ZSkmafu58/", "https://vt.tiktok.com/ZSkGdcvMX/",
-                "https://vt.tiktok.com/ZSkTJGLwn/", "https://vt.tiktok.com/ZSkTJ9TLb/", "https://vt.tiktok.com/ZSkusRepr/",
-                "https://vt.tiktok.com/ZSkus6Cd2/", "https://vt.tiktok.com/ZSkGMuLta/", "https://vt.tiktok.com/ZSkusdC2S/",
-                "https://vt.tiktok.com/ZSkTddstu/", "https://vt.tiktok.com/ZSkGFDt3K/", "https://vt.tiktok.com/ZSkGFVcoX/",
-                "https://vt.tiktok.com/ZSkunT2Eu/", "https://vt.tiktok.com/ZSkGY1n6g/", "https://vt.tiktok.com/ZSkuGwx2X/",
-                "https://vt.tiktok.com/ZSkTeXv4S/", "https://vt.tiktok.com/ZSkGYurHs/", "https://vt.tiktok.com/ZSkTePA1C/",
-                "https://vt.tiktok.com/ZSkTetwXR/", "https://vt.tiktok.com/ZSkutrN9n/", "https://vt.tiktok.com/ZSkuth4Pb/",
-                "https://vt.tiktok.com/ZSkGYna3S/", "https://vt.tiktok.com/ZSkTefHRu/", "https://vt.tiktok.com/ZSkutKgvG/",
-                "https://vt.tiktok.com/ZSkunhapC/", "https://vt.tiktok.com/ZSkutoeUD/", "https://vt.tiktok.com/ZSkunDG61/",
-                "https://vt.tiktok.com/ZSk7SbMUS/", "https://vt.tiktok.com/ZSkG6Fpvt/", "https://vt.tiktok.com/ZSkTeAbHA/",
-                "https://vt.tiktok.com/ZSkXuAQJg/", "https://vt.tiktok.com/ZSkTeaWjj/", "https://vt.tiktok.com/ZSkX5Uqaw/",
-                "https://vt.tiktok.com/ZSkTdJbKy/", "https://vt.tiktok.com/ZSkX5GU5w/", "https://vt.tiktok.com/ZSkX9yEYe/",
-                "https://vt.tiktok.com/ZSkX9UXCK/", "https://vt.tiktok.com/ZSkX9P93E/", "https://vt.tiktok.com/ZSkX9PMBE/",
-                "https://vt.tiktok.com/ZSkGMw8tg/", "https://vt.tiktok.com/ZSk4d6GVC/", "https://vt.tiktok.com/ZSkGhG8u2/",
-                "https://vt.tiktok.com/ZSkVUS4q9/", "https://vt.tiktok.com/ZSkVUQWHg/", "https://vt.tiktok.com/ZSkVUvBJb/",
-                "https://vt.tiktok.com/ZSkV5WCru/", "https://vt.tiktok.com/ZSkVyf2T5/", "https://vt.tiktok.com/ZSkVyLXa2/",
-                "https://vt.tiktok.com/ZSkVyA4de/", "https://vt.tiktok.com/ZSkVyk7c8/", "https://vt.tiktok.com/ZSkVyk7c8/",
-                "https://vt.tiktok.com/ZSkVyS5Hh/", "https://vt.tiktok.com/ZSkGknsM2/", "https://vt.tiktok.com/ZSkVP4LDq/",
-                "https://vt.tiktok.com/ZSkVPyfmL/", "https://vt.tiktok.com/ZSkVPyAPF/", "https://vt.tiktok.com/ZSkVPDfYU/",
-                "https://vt.tiktok.com/ZSkVPxaEW/", "https://vt.tiktok.com/ZSkV58vYR/", "https://vt.tiktok.com/ZSkTdbqfj/",
-                "https://vt.tiktok.com/ZSkTdmUu4/", "https://vt.tiktok.com/ZSkGBSqPf/", "https://vt.tiktok.com/ZSkGBdbFd/",
-                "https://vt.tiktok.com/ZSkTdVXLF/", "https://vt.tiktok.com/ZSkGBCk9D/", "https://vt.tiktok.com/ZSkW9NEkk/",
-                "https://vt.tiktok.com/ZSkG5NXnK/", "https://vt.tiktok.com/ZSkb23dVV/", "https://vt.tiktok.com/ZSkt3SAHg/",
-                "https://vt.tiktok.com/ZSk7pUQTB/", "https://vt.tiktok.com/ZSk7ppxA6/", "https://vt.tiktok.com/ZSk7GEEx8/",
-                "https://vt.tiktok.com/ZSk7pqsH8/", "https://vt.tiktok.com/ZSkWxmcQU/", "https://vt.tiktok.com/ZSk7pWKPV/",
-                "https://vt.tiktok.com/ZSk7GsKeH/", "https://vt.tiktok.com/ZSk7Kfynu/", "https://vt.tiktok.com/ZSkcfvTEE/",
-                "https://vt.tiktok.com/ZSkcf94JS/", "https://vt.tiktok.com/ZSkcPPGVJ/", "https://vt.tiktok.com/ZSkcP9EnK/",
-                "https://vt.tiktok.com/ZSkcPmm9H/", "https://vt.tiktok.com/ZSkcPm6DS/", "https://vt.tiktok.com/ZSkcPWPrm/",
-                "https://vt.tiktok.com/ZSkWxYQwL/", "https://vt.tiktok.com/ZSkWxeSDu/", "https://vt.tiktok.com/ZSkW9GRgb/",
-                "https://vt.tiktok.com/ZSkWxYR9x/", "https://vt.tiktok.com/ZSkW97svp/", "https://vt.tiktok.com/ZSkWxecuC/",
-                "https://vt.tiktok.com/ZSkW9cPAU/", "https://vt.tiktok.com/ZSkW9EP6h/", "https://vt.tiktok.com/ZSkWxV5RB/",
-                "https://vt.tiktok.com/ZSkWxXyQn/", "https://vt.tiktok.com/ZSkWQ2NXq/", "https://vt.tiktok.com/ZSkWC8YTH/",
-                "https://vt.tiktok.com/ZSk7bYYsa/", "https://vt.tiktok.com/ZSk7pDTGS/", "https://vt.tiktok.com/ZSkcPTTJE/",
-                "https://vt.tiktok.com/ZSBLWqQAw/", "https://vt.tiktok.com/ZSBL7DJUj/", "https://vt.tiktok.com/ZSBLWqQAw/",
-                "https://vt.tiktok.com/ZSBL7DJUj/", "https://vt.tiktok.com/ZSBY324Pu/", "https://vt.tiktok.com/ZSkofs1bL/",
-                "https://vt.tiktok.com/ZSB1XsnuV/", "https://vt.tiktok.com/ZSkoPGNJ6/", "https://vt.tiktok.com/ZSB1S1tke/",
-                "https://vt.tiktok.com/ZSHbShqHbgY7K-h3Uii/", "https://vt.tiktok.com/ZSB6gyC83/"
-            ]},
-            { name: { ar: "نينجا", en: "Ninja" }, links: [
-                "https://vt.tiktok.com/ZSDh8pFPn/", "https://vt.tiktok.com/ZSDroQoX4/", "https://vt.tiktok.com/ZSDroqsb8/",
-                "https://vt.tiktok.com/ZSDh84a4F/", "https://vt.tiktok.com/ZSDh8yN6g/", "https://vt.tiktok.com/ZSDk5KWuu/",
-                "https://vt.tiktok.com/ZSDh1184t/", "https://vt.tiktok.com/ZSDh1NeGV/", "https://vt.tiktok.com/ZSDh1MDRS/",
-                "https://vt.tiktok.com/ZSDDnmWTf/", "https://vt.tiktok.com/ZSDh16fcb/", "https://vt.tiktok.com/ZSDrotG2Q/",
-                "https://vt.tiktok.com/ZSDh11PAx/", "https://vt.tiktok.com/ZSDh12Yaw/", "https://vt.tiktok.com/ZSDh1RXWg/",
-                "https://vt.tiktok.com/ZSDronpLC/", "https://vt.tiktok.com/ZSDro3dtD/", "https://vt.tiktok.com/ZSDroEDNA/",
-                "https://vt.tiktok.com/ZSDh1JCst/", "https://vt.tiktok.com/ZSDhLnaCr/", "https://vt.tiktok.com/ZSDSPQVJk/",
-                "https://vt.tiktok.com/ZSDh1rFUg/", "https://vt.tiktok.com/ZSDh87TFS/", "https://vt.tiktok.com/ZSDkHGqj4/",
-                "https://vt.tiktok.com/ZSDh1aXKS/", "https://vt.tiktok.com/ZSDh1BmVF/", "https://vt.tiktok.com/ZSDhJJ9v1/",
-                "https://vt.tiktok.com/ZSDhLNP6D/", "https://vt.tiktok.com/ZSDka4PEr/", "https://vt.tiktok.com/ZSDh1boCW/",
-                "https://vt.tiktok.com/ZSDBjnBh2/", "https://vt.tiktok.com/ZSD6eu4rS/", "https://vt.tiktok.com/ZSDhJAQjT/",
-                "https://vt.tiktok.com/ZSDByo9Da/", "https://vt.tiktok.com/ZSDkaurpL/", "https://vt.tiktok.com/ZSDhJcNUQ/",
-                "https://vt.tiktok.com/ZSDhJWErD/", "https://vt.tiktok.com/ZSDhJtC9o/", "https://vt.tiktok.com/ZSDcF7AJE/",
-                "https://vt.tiktok.com/ZSDk7PPS2/", "https://vt.tiktok.com/ZSDhJneuH/", "https://vt.tiktok.com/ZSDkaQeKH/",
-                "https://vt.tiktok.com/ZSDkanuv9/", "https://vt.tiktok.com/ZSDhJTe9h/", "https://vt.tiktok.com/ZSDkbWtRL/",
-                "https://vt.tiktok.com/ZSDheuCJf/", "https://vt.tiktok.com/ZSDhej49J/", "https://vt.tiktok.com/ZSDkax32s/",
-                "https://vt.tiktok.com/ZSDheu67M/", "https://vt.tiktok.com/ZSDhehxdU/", "https://vt.tiktok.com/ZSD6dyAY2/",
-                "https://vt.tiktok.com/ZSDheuvxS/", "https://vt.tiktok.com/ZSDheFsWX/", "https://vt.tiktok.com/ZSDkaThET/",
-                "https://vt.tiktok.com/ZSDhefe3o/", "https://vt.tiktok.com/ZSDherg7U/", "https://vt.tiktok.com/ZSDkmy1tr/",
-                "https://vt.tiktok.com/ZSDk9Q9Rg/", "https://vt.tiktok.com/ZSDecSvRn/", "https://vt.tiktok.com/ZSDhe4AN4/",
-                "https://vt.tiktok.com/ZSDheHC6u/", "https://vt.tiktok.com/ZSDkWETgp/", "https://vt.tiktok.com/ZSDhddd6V/",
-                "https://vt.tiktok.com/ZSDhdrL2T/", "https://vt.tiktok.com/ZSDhdf3vx/", "https://vt.tiktok.com/ZSDkTkXrY/",
-                "https://vt.tiktok.com/ZSDhRbL9b/", "https://vt.tiktok.com/ZSDhdY112/", "https://vt.tiktok.com/ZSDhdh3NT/",
-                "https://vt.tiktok.com/ZSDhRjJS4/", "https://vt.tiktok.com/ZSDhdn51c/", "https://vt.tiktok.com/ZSDh8aDCS/",
-                "https://vt.tiktok.com/ZSDhdxs3y/", "https://vt.tiktok.com/ZSDhdujgv/", "https://vt.tiktok.com/ZSD66jm9R/",
-                "https://vt.tiktok.com/ZSDhdEhSK/", "https://vt.tiktok.com/ZSDhRd1xw/", "https://vt.tiktok.com/ZSDhR19Y9/",
-                "https://vt.tiktok.com/ZSDhRL4sE/", "https://vt.tiktok.com/ZSDhRBjMp/", "https://vt.tiktok.com/ZSDhR1yJc/",
-                "https://vt.tiktok.com/ZSDhRRCNe/", "https://vt.tiktok.com/ZSDhdwBdb/", "https://vt.tiktok.com/ZSDhRhoYx/",
-                "https://vt.tiktok.com/ZSDhRS36B/", "https://vt.tiktok.com/ZSDhRYXNG/", "https://vt.tiktok.com/ZSD6JXokU/",
-                "https://vt.tiktok.com/ZSDkmAfVM/", "https://vt.tiktok.com/ZSDhRpXrr/", "https://vt.tiktok.com/ZSDhRK2kv/",
-                "https://vt.tiktok.com/ZSD3cJDVx/", "https://vt.tiktok.com/ZSDkmy4Ro/", "https://vt.tiktok.com/ZSDhRwR6E/",
-                "https://vt.tiktok.com/ZSDKaQDut/", "https://vt.tiktok.com/ZSDhN1oUd/", "https://vt.tiktok.com/ZSDdxuKTU/",
-                "https://vt.tiktok.com/ZSDvp6B8F/", "https://vt.tiktok.com/ZSDcMUwxq/", "https://vt.tiktok.com/ZSDTVdpKA/",
-                "https://vt.tiktok.com/ZSDcCdoTf/"
-            ]},
-            { name: { ar: "ميشبل", en: "Michele" }, links: [
-                "https://vt.tiktok.com/ZSSRPRwA4/", "https://vt.tiktok.com/ZSSFTfy8b/", "https://vt.tiktok.com/ZSSdyL3T7/",
-                "https://vt.tiktok.com/ZSSFK1f67/", "https://vt.tiktok.com/ZSSFKMLtX/", "https://vt.tiktok.com/ZSSLtnFja/",
-                "https://vt.tiktok.com/ZSSYLyoA2/", "https://vt.tiktok.com/ZSSLt53rx/", "https://vt.tiktok.com/ZSSdy8NQW/",
-                "https://vt.tiktok.com/ZSSYFtTDF/", "https://vt.tiktok.com/ZSSYjusVa/", "https://vt.tiktok.com/ZSSYLyoA2/",
-                "https://vt.tiktok.com/ZSS8NCEps/", "https://vt.tiktok.com/ZSSdyCkRv/", "https://vt.tiktok.com/ZSSLtnfrB/",
-                "https://vt.tiktok.com/ZSSY2CSH8/", "https://vt.tiktok.com/ZSSYL3p25/", "https://vt.tiktok.com/ZSSR7UjSU/",
-                "https://vt.tiktok.com/ZSSNMTfUc/", "https://vt.tiktok.com/ZSSYMTAKH/", "https://vt.tiktok.com/ZSSYuYR9g/",
-                "https://vt.tiktok.com/ZSSYFnqwr/", "https://vt.tiktok.com/ZSSYCY5no/", "https://vt.tiktok.com/ZSSYDx9nJ/",
-                "https://vt.tiktok.com/ZSSNW8WTd/"
-            ]},
-            { name: { ar: "كلاج", en: "College" }, links: [
-                "https://vt.tiktok.com/ZSBVMnRw6/", "https://vt.tiktok.com/ZSBVMKYQ6/", "https://vt.tiktok.com/ZSBVMwMHc/",
-                "https://vt.tiktok.com/ZSBVreunv/", "https://vt.tiktok.com/ZSkvJFmxQ/", "https://vt.tiktok.com/ZSkweBG3e/",
-                "https://vt.tiktok.com/ZSBVr4EuD/", "https://vt.tiktok.com/ZSkTKPYYd/", "https://vt.tiktok.com/ZSBVrGqmR/",
-                "https://vt.tiktok.com/ZSBVrKn2N/", "https://vt.tiktok.com/ZSBVhNaDq/", "https://vt.tiktok.com/ZSBVrEh2U/",
-                "https://vt.tiktok.com/ZSk3t7f4F/", "https://vt.tiktok.com/ZSBVhhYck/", "https://vt.tiktok.com/ZSBVhYStg/",
-                "https://vt.tiktok.com/ZSBVh61jR/", "https://vt.tiktok.com/ZSk3tP7tL/", "https://vt.tiktok.com/ZSkTeAjhX/",
-                "https://vt.tiktok.com/ZSB1Q7cNc/", "https://vt.tiktok.com/ZSkKU39py/", "https://vt.tiktok.com/ZSkvVLGwD/",
-                "https://vt.tiktok.com/ZSkoUtHAt/", "https://vt.tiktok.com/ZSkcbPsGj/"
-            ]},
-            { name: { ar: "غداء صويخات", en: "Sawaikh Lunch" }, links: [
-                "https://vt.tiktok.com/ZSD7MqBHy/", "https://vt.tiktok.com/ZSDtQ55VH/", "https://vt.tiktok.com/ZSDtXFc7d/",
-                "https://vt.tiktok.com/ZSDWS2MHB/", "https://vt.tiktok.com/ZSD7retqV/", "https://vt.tiktok.com/ZSDWSe7db/",
-                "https://vt.tiktok.com/ZSDWtLwM7/", "https://vt.tiktok.com/ZSDcfBXgS/", "https://vt.tiktok.com/ZSDW7dkCk/",
-                "https://vt.tiktok.com/ZSDvrRN3o/", "https://vt.tiktok.com/ZSD7aJVgM/", "https://vt.tiktok.com/ZSD7MoWWY/",
-                "https://vt.tiktok.com/ZSUR7VjNX/", "https://vt.tiktok.com/ZSD7ad83x/", "https://vt.tiktok.com/ZSD7FJg1F/",
-                "https://vt.tiktok.com/ZSD7eQYE7/", "https://vt.tiktok.com/ZSDWwPjcs/", "https://vt.tiktok.com/ZSD7arg4t/",
-                "https://vt.tiktok.com/ZSD79JqYs/", "https://vt.tiktok.com/ZSD3YHrpm/", "https://vt.tiktok.com/ZSDchd9Qq/",
-                "https://vt.tiktok.com/ZSU1yHkaA/", "https://vt.tiktok.com/ZSDcUonye/", "https://vt.tiktok.com/ZSDcawSgP/",
-                "https://vt.tiktok.com/ZSDcPRGGA/", "https://vt.tiktok.com/ZSDc6fFHx/", "https://vt.tiktok.com/ZSDcVU9EJ/",
-                "https://vt.tiktok.com/ZSD37KX3r/", "https://vt.tiktok.com/ZSURhsAar/", "https://vt.tiktok.com/ZSUJvhQnA/",
-                "https://vt.tiktok.com/ZSUJKvrC5/", "https://vt.tiktok.com/ZSUJ3wpmC/", "https://vt.tiktok.com/ZSUJTJ8eQ/",
-                "https://vt.tiktok.com/ZSUJTFWtV/", "https://vt.tiktok.com/ZSUJTjVGU/", "https://vt.tiktok.com/ZSUJEqes7/",
-                "https://vt.tiktok.com/ZSUJTk34M/", "https://vt.tiktok.com/ZSUJTMBMD/", "https://vt.tiktok.com/ZSUJTkXRs/",
-                "https://vt.tiktok.com/ZSULd1ggE/", "https://vt.tiktok.com/ZSULSonp3/", "https://vt.tiktok.com/ZSULdjpRq/",
-                "https://vt.tiktok.com/ZSULdhWQ1/", "https://vt.tiktok.com/ZSULdAf6X/", "https://vt.tiktok.com/ZSULnN1X3/",
-                "https://vt.tiktok.com/ZSULdDtA6/", "https://vt.tiktok.com/ZSULdkdA6/", "https://vt.tiktok.com/ZSU88r3sF/"
-            ]}
+            { 
+                name: { ar: "كايف كوفي", en: "Kaif Coffee" }, 
+                description: {
+                    ar: "حملة ترويجية لمقهى كايف كوفي تضمنت التعاون مع أكثر من 100 مؤثر على تيك توك لتعزيز الوعي بالعلامة التجارية وزيادة المبيعات.",
+                    en: "Promotional campaign for Kaif Coffee involving collaboration with over 100 TikTok influencers to enhance brand awareness and increase sales."
+                },
+                links: [
+                    "https://vt.tiktok.com/ZSDWXwNXg/","https://vt.tiktok.com/ZSDvVJjQX/","https://vt.tiktok.com/ZSURrgWyX/",
+                    "https://vt.tiktok.com/ZSDvVkFMn/","https://vt.tiktok.com/ZSDWXBvfS/","https://vt.tiktok.com/ZSDvVfVUv/",
+                    "https://vt.tiktok.com/ZSDvVusqg/","https://vt.tiktok.com/ZSDtUgL1T/","https://vt.tiktok.com/ZSDtUWyqE/",
+                    "https://vt.tiktok.com/ZSUmkTdPC/","https://vt.tiktok.com/ZSDnPpPoL/","https://vt.tiktok.com/ZSDWXCJt5/",
+                    "https://vt.tiktok.com/ZSDWXpoHy/","https://vt.tiktok.com/ZSDWnLB5q/","https://vt.tiktok.com/ZSDW4emG5/",
+                    "https://vt.tiktok.com/ZSD76yQ9h/","https://vt.tiktok.com/ZSURrsa7j/","https://vt.tiktok.com/ZSDW4FgvW/",
+                    "https://vt.tiktok.com/ZSDVsoE1u/","https://vt.tiktok.com/ZSDWKKSFf/","https://vt.tiktok.com/ZSDWgRu77/",
+                    "https://vt.tiktok.com/ZSDWVBJGd/","https://vt.tiktok.com/ZSDW4DHbR/","https://vt.tiktok.com/ZSDW4jSGb/",
+                    "https://vt.tiktok.com/ZSUmk9kH4/","https://vt.tiktok.com/ZSUmkHkPq/","https://vt.tiktok.com/ZSDty1mpr/",
+                    "https://vt.tiktok.com/ZSUmkVn99/","https://vt.tiktok.com/ZSUmk78PU/","https://vt.tiktok.com/ZSDWVueoj/",
+                    "https://vt.tiktok.com/ZSU95aQfy/","https://vt.tiktok.com/ZSDtyBL22/","https://vt.tiktok.com/ZSDtUTeRG/",
+                    "https://vt.tiktok.com/ZSDvVE3j9/","https://vt.tiktok.com/ZSUVqMBst/","https://vt.tiktok.com/ZSDvVtCaj/",
+                    "https://vt.tiktok.com/ZSDtydptJ/","https://vt.tiktok.com/ZSDWV6rCH/","https://vt.tiktok.com/ZSDWVrSL6/",
+                    "https://vt.tiktok.com/ZSUtoMnCb/","https://vt.tiktok.com/ZSD7j8EQc/","https://vt.tiktok.com/ZSDty23MJ/",
+                    "https://vt.tiktok.com/ZSDvVw2eG/","https://vt.tiktok.com/ZSD7kUfct/","https://vt.tiktok.com/ZSURro8TJ/",
+                    "https://vt.tiktok.com/ZSDtydfKt/","https://vt.tiktok.com/ZSDWV4KMM/","https://vt.tiktok.com/ZSUVqBDU8/",
+                    "https://vt.tiktok.com/ZSDWVonbN/","https://vt.tiktok.com/ZSDtyJp3J/","https://vt.tiktok.com/ZSDtyJG4R/",
+                    "https://vt.tiktok.com/ZSDvbkemd/","https://vt.tiktok.com/ZSUmknhTK/","https://vt.tiktok.com/ZSDtyRvoW/",
+                    "https://vt.tiktok.com/ZSUVqjScr/","https://vt.tiktok.com/ZSULp3WJy/","https://vt.tiktok.com/ZSDWVWo2t/",
+                    "https://vt.tiktok.com/ZSUmfGKBT/","https://vt.tiktok.com/ZSDtyM7PH/","https://vt.tiktok.com/ZSDtUTkcs/",
+                    "https://vt.tiktok.com/ZSDWVK19K/","https://vt.tiktok.com/ZSUmBUMYp/","https://vt.tiktok.com/ZSDtyM7PH/",
+                    "https://vt.tiktok.com/ZSUVqQR7g/","https://vt.tiktok.com/ZSDWVQSy1/","https://vt.tiktok.com/ZSDWqyyup/",
+                    "https://vt.tiktok.com/ZSUmBNX7a/","https://vt.tiktok.com/ZSUVqa5uT/","https://vt.tiktok.com/ZSDtymbk7/",
+                    "https://vt.tiktok.com/ZSDvqf26T/","https://vt.tiktok.com/ZSDtyq3nB/","https://vt.tiktok.com/ZSUmBYvba/",
+                    "https://vt.tiktok.com/ZSD7eqNNo/","https://vt.tiktok.com/ZSDvq6FBC/","https://vt.tiktok.com/ZSDcFymsK/",
+                    "https://vt.tiktok.com/ZSUtoMxQF/","https://vt.tiktok.com/ZSDWq2hqY/","https://vt.tiktok.com/ZSDtyHLqM/",
+                    "https://vt.tiktok.com/ZSDtymrxB/","https://vt.tiktok.com/ZSUto9Dku/","https://vt.tiktok.com/ZSUmBUhLR/",
+                    "https://vt.tiktok.com/ZSDvqP1af/","https://vt.tiktok.com/ZSUmA8fxp/","https://vt.tiktok.com/ZSDWqPmHR/",
+                    "https://vt.tiktok.com/ZSDtytJXY/","https://vt.tiktok.com/ZSD7mjx7t/","https://vt.tiktok.com/ZSUHco2r2/",
+                    "https://vt.tiktok.com/ZSUtojkEe/","https://vt.tiktok.com/ZSDtyqYqn/","https://vt.tiktok.com/ZSD76xoes/",
+                    "https://vt.tiktok.com/ZSURhD88K/","https://vt.tiktok.com/ZSDty4qmn/","https://vt.tiktok.com/ZSD7jkFoB/",
+                    "https://vt.tiktok.com/ZSUVbb8ap/","https://vt.tiktok.com/ZSUVbesVy/","https://vt.tiktok.com/ZSUVqbo1G/",
+                    "https://vt.tiktok.com/ZSUsB4yN4/","https://vt.tiktok.com/ZSUsjC5Fp/","https://vt.tiktok.com/ZSUbvm9QN/",
+                    "https://vt.tiktok.com/ZSUbvxtYh/","https://vt.tiktok.com/ZSUVbe11q/","https://vt.tiktok.com/ZSUVqEmLP/",
+                    "https://vt.tiktok.com/ZSUHccH3U/","https://vt.tiktok.com/ZSUVqGKj5/","https://vt.tiktok.com/ZSUsrSxkQ/",
+                    "https://vt.tiktok.com/ZSUVqKdYX/","https://vt.tiktok.com/ZSUVb5s9H/","https://vt.tiktok.com/ZSUVb5Yvs/",
+                    "https://vt.tiktok.com/ZSUmBa6T5/","https://vt.tiktok.com/ZSUmBm88a/","https://vt.tiktok.com/ZSUmBCUaM/",
+                    "https://vt.tiktok.com/ZSUVb599h/","https://vt.tiktok.com/ZSUbvkNAK/","https://vt.tiktok.com/ZSUVghLBT/",
+                    "https://vt.tiktok.com/ZSUbvyDmp/","https://vt.tiktok.com/ZSUshwLtj/","https://vt.tiktok.com/ZSUbvm9QN/",
+                    "https://vt.tiktok.com/ZSUbvfvrM/","https://vt.tiktok.com/ZSUbvh184/","https://vt.tiktok.com/ZSUtoWWxJ/",
+                    "https://vt.tiktok.com/ZSUHTr16E/","https://vt.tiktok.com/ZSUgR183v/","https://vt.tiktok.com/ZSUuDkkQq/",
+                    "https://vt.tiktok.com/ZSUVp8VwW/","https://vt.tiktok.com/ZSUs6oE9A/","https://vt.tiktok.com/ZSUskd19L/",
+                    "https://vt.tiktok.com/ZSUskRtEv/","https://vt.tiktok.com/ZSUshp9wU/","https://vt.tiktok.com/ZSUsgHXsY/",
+                    "https://vt.tiktok.com/ZSUn1dxvq/","https://vt.tiktok.com/ZSUn1r71m/","https://vt.tiktok.com/ZSUn1NTHE/"
+                ]
+            },
+            { 
+                name: { ar: "رمضان ELCT 2025", en: "Ramadan ELCT 2025" }, 
+                description: {
+                    ar: "حملة رمضانية خاصة لمطعم ELCT مع مؤثرين متنوعين وعروض مخصصة للشهر الكريم.",
+                    en: "Special Ramadan campaign for ELCT restaurant with various influencers and Ramadan-only offers."
+                },
+                links: [
+                    "https://vt.tiktok.com/ZSMQYNxJY/","https://www.tiktok.com/@nadaa_ii1/video/7478777155619507463",
+                    "https://vt.tiktok.com/ZSMxcPwob/","https://vt.tiktok.com/ZSMQKvtC4/",
+                    "https://www.tiktok.com/@modi.k1/video/7479066921938193682","https://vt.tiktok.com/ZSMQENkAE/",
+                    "https://vt.tiktok.com/ZSMCYq3eX/","https://vt.tiktok.com/ZSMxKcdft/",
+                    "https://www.tiktok.com/@riyadhxvibes/photo/7479148200671186183","https://vt.tiktok.com/ZSMx3KnVx/",
+                    "https://vt.tiktok.com/ZSMCQ41Hr/","https://www.tiktok.com/@sa.mohammed71/video/7478811170271481104",
+                    "https://vt.tiktok.com/ZSMCUyFcM/","https://vt.tiktok.com/ZSMQrBW4m/","https://vt.tiktok.com/ZSMCQYmxp/",
+                    "https://vt.tiktok.com/ZSMQr4L19/","https://www.tiktok.com/@bloggers_trund/video/7479386010497994005",
+                    "https://vt.tiktok.com/ZSMQea8m2/","https://www.tiktok.com/@r9lia?_t=ZS-8uUZSU3DSKn&_r=1",
+                    "https://vt.tiktok.com/ZSMcDUYS4/","https://vt.tiktok.com/ZSMQEaSq8/",
+                    "https://www.tiktok.com/@almahra2030/video/7478774580618775815","https://www.tiktok.com/@itseiii1/video/7478441630027009288",
+                    "https://www.tiktok.com/@8ath1/video/7478844538237242632","https://vt.tiktok.com/ZSMQKPexT/",
+                    "https://vt.tiktok.com/ZSMQe1r1T/","https://vt.tiktok.com/ZSM4cDb4k/","https://www.tiktok.com/@3lee7/video/7479525536285347080",
+                    "https://vt.tiktok.com/ZSMXmUnWF/","https://www.tiktok.com/@iiloyoi/video/7478473171755191568",
+                    "https://vt.tiktok.com/ZSMcDwPEu/","https://www.tiktok.com/@aa.wtq/video/7478479814937054482",
+                    "https://vt.tiktok.com/ZSMVLV3eB/","https://vt.tiktok.com/ZSMCQ5hNs/","https://vt.tiktok.com/ZSMpfaJNW/",
+                    "https://vt.tiktok.com/ZSMQrWFXk/","https://vt.tiktok.com/ZSMQL2D5D/","https://www.tiktok.com/@mlal138/video/7478781080762617096",
+                    "https://vt.tiktok.com/ZSMQEdwyW/","https://vt.tiktok.com/ZSMQNnS87/","https://vt.tiktok.com/ZSMxKWHQR/",
+                    "https://vt.tiktok.com/ZSMxTnhx1/","https://vt.tiktok.com/ZSMqmLUG6/","https://vt.tiktok.com/ZSMQKvMcg/",
+                    "https://www.tiktok.com/@noura_f92/video/7478890375902481685","https://vt.tiktok.com/ZSMQKKca7/","https://vt.tiktok.com/ZSMXEVhLo/",
+                    "https://vt.tiktok.com/ZSMQK3RUb/","https://vt.tiktok.com/ZSMCQBdY9/","https://vt.tiktok.com/ZSMCQrwQL/",
+                    "https://vt.tiktok.com/ZSMCPFx41/","https://www.tiktok.com/@77eill/video/7479501051847052552","https://vt.tiktok.com/ZSMcyPAW8/",
+                    "https://vt.tiktok.com/ZSMCqt3qu/","https://www.tiktok.com/@ui.u60/video/7479183485358329096","https://vt.tiktok.com/ZSM4Jd547/",
+                    "https://www.tiktok.com/@shihanaha11/video/7479561744017296648","https://www.tiktok.com/@99imi/video/7479560530563271943",
+                    "https://www.tiktok.com/@lovelybratz1/video/7479221622910504199","https://vt.tiktok.com/ZSMXbeRhJ/","https://vt.tiktok.com/ZSMXqwkvB/",
+                    "https://vt.tiktok.com/ZSMXbuCHx/","https://www.tiktok.com/@iiox0l/video/7479477169459072264","https://vt.tiktok.com/ZSMVFehQa/",
+                    "https://vt.tiktok.com/ZSMXGUcRx/","https://vt.tiktok.com/ZSMX7rUpr/","https://vt.tiktok.com/ZSMphHbK8/",
+                    "https://vt.tiktok.com/ZSMXnT3EJ/","https://vt.tiktok.com/ZSMXvoM3e/","https://vt.tiktok.com/ZSMX3GLt2/",
+                    "https://www.tiktok.com/@tahani..0/video/7479596602349440263","https://vt.tiktok.com/ZSMVdAxf5/","https://www.tiktok.com/@ilamma/video/7479614361804213522",
+                    "https://vt.tiktok.com/ZSMph4DWX/","https://vt.tiktok.com/ZSMVkedKt/","https://vt.tiktok.com/ZSMVkm8Qa/",
+                    "https://vt.tiktok.com/ZSMp47pgx/","https://vt.tiktok.com/ZSMqGaUDE/","https://www.tiktok.com/@al11o3_/video/7481115900079361287",
+                    "https://vt.tiktok.com/ZSMpmL6ng/","https://www.tiktok.com/@b.m.m.9/video/7481419467927407880","https://www.tiktok.com/@merawz/video/7481432052328385800",
+                    "https://www.tiktok.com/@sh_m881/video/7479163266174930194","https://vt.tiktok.com/ZSMQEF3Fq/","https://vt.tiktok.com/ZSMQrQ4R1/",
+                    "https://www.tiktok.com/@03r.y/video/7478492161458277640","https://www.tiktok.com/@noo_rhf16/video/7478818297970969864",
+                    "https://vt.tiktok.com/ZSM48D85W/","https://www.tiktok.com/@rammed20/video/7478415216229797127","https://www.tiktok.com/@lama9.4/video/7478480907511418120",
+                    "https://vt.tiktok.com/ZSMQE6Tce/","https://vt.tiktok.com/ZSMQr4KgK/","https://vt.tiktok.com/ZSMQEysyW/",
+                    "https://vt.tiktok.com/ZSMQTqrYH/","https://vt.tiktok.com/ZSMQoonch/","https://vt.tiktok.com/ZSMCQFqfA/",
+                    "https://vt.tiktok.com/ZSMCQyagR/","https://vt.tiktok.com/ZSMCQu8p4/"
+                ]
+            },
+            { 
+                name: { ar: "SEEN", en: "SEEN" }, 
+                description: {
+                    ar: "حملة إبداعية لمطعم SEEN لعرض تجربة طعام فاخرة عبر محتوى بصري جذاب.",
+                    en: "Creative campaign for SEEN restaurant showcasing a fine dining experience through engaging visuals."
+                },
+                links: [
+                    "https://vt.tiktok.com/ZSMcPWP1x/","https://vt.tiktok.com/ZSMc5JDdC/","https://vt.tiktok.com/ZSMcPWM1S/",
+                    "https://vt.tiktok.com/ZSMcP7wbj/","https://vt.tiktok.com/ZSMc5r7gY/","https://vt.tiktok.com/ZSMc5Ffsu/",
+                    "https://vt.tiktok.com/ZSM3UPeBB/","https://vt.tiktok.com/ZSMc5x8eX/","https://vt.tiktok.com/ZSMc5Aade/",
+                    "https://vt.tiktok.com/ZSMwnR4cJ/","https://vt.tiktok.com/ZSM3URA8n/","https://vt.tiktok.com/ZSMc5adaH/",
+                    "https://vt.tiktok.com/ZSMc5rrxw/","https://vt.tiktok.com/ZSMc5jc1N/","https://vt.tiktok.com/ZSM3uPm8c/",
+                    "https://vt.tiktok.com/ZSMwnn2df/","https://vt.tiktok.com/ZSM3AoSg3/","https://vt.tiktok.com/ZSMc5ffJ5/",
+                    "https://vt.tiktok.com/ZSMc5aUp8/","https://vt.tiktok.com/ZSMc5hKhq/","https://vt.tiktok.com/ZSMc596jp/",
+                    "https://vt.tiktok.com/ZSMc5F5Q9/","https://vt.tiktok.com/ZSMc52eHV/","https://vt.tiktok.com/ZSMc5fGDQ/",
+                    "https://vt.tiktok.com/ZSMc5P7Cc/","https://vt.tiktok.com/ZSMwnkGTC/","https://vt.tiktok.com/ZSM3UpudX/",
+                    "https://vt.tiktok.com/ZSMc5UcUv/"
+                ]
+            },
+            { 
+                name: { ar: "مطعم فيش", en: "Feesh Restaurant" }, 
+                description: {
+                    ar: "حملة لمطعم فيش المتخصص في المأكولات البحرية استهدفت عشاق السي فوود في الرياض.",
+                    en: "Campaign for Feesh seafood restaurant targeting seafood lovers in Riyadh."
+                },
+                links: [
+                    "https://vt.tiktok.com/ZSkXW4pQt/","https://vt.tiktok.com/ZSkXTVLeK/","https://vt.tiktok.com/ZSk4Js68k/",
+                    "https://vt.tiktok.com/ZSk41t8FW/","https://vt.tiktok.com/ZSk4R5AHh/","https://vt.tiktok.com/ZSkTJJXLr/",
+                    "https://vt.tiktok.com/ZSkmyquDC/","https://vt.tiktok.com/ZSkmf2hNp/","https://vt.tiktok.com/ZSkmfNxcr/",
+                    "https://vt.tiktok.com/ZSkmPLDQ8/","https://vt.tiktok.com/ZSkm5pcUg/","https://vt.tiktok.com/ZSkma1pHG/",
+                    "https://vt.tiktok.com/ZSkm5GPwj/","https://vt.tiktok.com/ZSkm53rYe/","https://vt.tiktok.com/ZSkm5VPL9/",
+                    "https://vt.tiktok.com/ZSkTJePg3/","https://vt.tiktok.com/ZSkma8164/","https://vt.tiktok.com/ZSkGdheFg/",
+                    "https://vt.tiktok.com/ZSkma8hHq/","https://vt.tiktok.com/ZSkGdQrgN/","https://vt.tiktok.com/ZSkm5c4Hj/",
+                    "https://vt.tiktok.com/ZSkma6h8j/","https://vt.tiktok.com/ZSkmafu58/","https://vt.tiktok.com/ZSkGdcvMX/",
+                    "https://vt.tiktok.com/ZSkTJGLwn/","https://vt.tiktok.com/ZSkTJ9TLb/","https://vt.tiktok.com/ZSkusRepr/",
+                    "https://vt.tiktok.com/ZSkus6Cd2/","https://vt.tiktok.com/ZSkGMuLta/","https://vt.tiktok.com/ZSkusdC2S/",
+                    "https://vt.tiktok.com/ZSkTddstu/","https://vt.tiktok.com/ZSkGFDt3K/","https://vt.tiktok.com/ZSkGFVcoX/",
+                    "https://vt.tiktok.com/ZSkunT2Eu/","https://vt.tiktok.com/ZSkGY1n6g/","https://vt.tiktok.com/ZSkuGwx2X/",
+                    "https://vt.tiktok.com/ZSkTeXv4S/","https://vt.tiktok.com/ZSkGYurHs/","https://vt.tiktok.com/ZSkTePA1C/",
+                    "https://vt.tiktok.com/ZSkTetwXR/","https://vt.tiktok.com/ZSkutrN9n/","https://vt.tiktok.com/ZSkuth4Pb/",
+                    "https://vt.tiktok.com/ZSkGYna3S/","https://vt.tiktok.com/ZSkTefHRu/","https://vt.tiktok.com/ZSkutKgvG/",
+                    "https://vt.tiktok.com/ZSkunhapC/","https://vt.tiktok.com/ZSkutoeUD/","https://vt.tiktok.com/ZSkunDG61/",
+                    "https://vt.tiktok.com/ZSk7SbMUS/","https://vt.tiktok.com/ZSkG6Fpvt/","https://vt.tiktok.com/ZSkTeAbHA/",
+                    "https://vt.tiktok.com/ZSkXuAQJg/","https://vt.tiktok.com/ZSkTeaWjj/","https://vt.tiktok.com/ZSkX5Uqaw/",
+                    "https://vt.tiktok.com/ZSkTdJbKy/","https://vt.tiktok.com/ZSkX5GU5w/","https://vt.tiktok.com/ZSkX9yEYe/",
+                    "https://vt.tiktok.com/ZSkX9UXCK/","https://vt.tiktok.com/ZSkX9P93E/","https://vt.tiktok.com/ZSkX9PMBE/",
+                    "https://vt.tiktok.com/ZSkGMw8tg/","https://vt.tiktok.com/ZSk4d6GVC/","https://vt.tiktok.com/ZSkGhG8u2/",
+                    "https://vt.tiktok.com/ZSkVUS4q9/","https://vt.tiktok.com/ZSkVUQWHg/","https://vt.tiktok.com/ZSkVUvBJb/",
+                    "https://vt.tiktok.com/ZSkV5WCru/","https://vt.tiktok.com/ZSkVyf2T5/","https://vt.tiktok.com/ZSkVyLXa2/",
+                    "https://vt.tiktok.com/ZSkVyA4de/","https://vt.tiktok.com/ZSkVyk7c8/","https://vt.tiktok.com/ZSkVyk7c8/",
+                    "https://vt.tiktok.com/ZSkVyS5Hh/","https://vt.tiktok.com/ZSkGknsM2/","https://vt.tiktok.com/ZSkVP4LDq/",
+                    "https://vt.tiktok.com/ZSkVPyfmL/","https://vt.tiktok.com/ZSkVPyAPF/","https://vt.tiktok.com/ZSkVPDfYU/",
+                    "https://vt.tiktok.com/ZSkVPxaEW/","https://vt.tiktok.com/ZSkV58vYR/","https://vt.tiktok.com/ZSkTdbqfj/",
+                    "https://vt.tiktok.com/ZSkTdmUu4/","https://vt.tiktok.com/ZSkGBSqPf/","https://vt.tiktok.com/ZSkGBdbFd/",
+                    "https://vt.tiktok.com/ZSkTdVXLF/","https://vt.tiktok.com/ZSkGBCk9D/","https://vt.tiktok.com/ZSkW9NEkk/",
+                    "https://vt.tiktok.com/ZSkG5NXnK/","https://vt.tiktok.com/ZSkb23dVV/","https://vt.tiktok.com/ZSkt3SAHg/",
+                    "https://vt.tiktok.com/ZSk7pUQTB/","https://vt.tiktok.com/ZSk7ppxA6/","https://vt.tiktok.com/ZSk7GEEx8/",
+                    "https://vt.tiktok.com/ZSk7pqsH8/","https://vt.tiktok.com/ZSkWxmcQU/","https://vt.tiktok.com/ZSk7pWKPV/",
+                    "https://vt.tiktok.com/ZSk7GsKeH/","https://vt.tiktok.com/ZSk7Kfynu/","https://vt.tiktok.com/ZSkcfvTEE/",
+                    "https://vt.tiktok.com/ZSkcf94JS/","https://vt.tiktok.com/ZSkcPPGVJ/","https://vt.tiktok.com/ZSkcP9EnK/",
+                    "https://vt.tiktok.com/ZSkcPmm9H/","https://vt.tiktok.com/ZSkcPm6DS/","https://vt.tiktok.com/ZSkcPWPrm/",
+                    "https://vt.tiktok.com/ZSkWxYQwL/","https://vt.tiktok.com/ZSkWxeSDu/","https://vt.tiktok.com/ZSkW9GRgb/",
+                    "https://vt.tiktok.com/ZSkWxYR9x/","https://vt.tiktok.com/ZSkW97svp/","https://vt.tiktok.com/ZSkWxecuC/",
+                    "https://vt.tiktok.com/ZSkW9cPAU/","https://vt.tiktok.com/ZSkW9EP6h/","https://vt.tiktok.com/ZSkWxV5RB/",
+                    "https://vt.tiktok.com/ZSkWxXyQn/","https://vt.tiktok.com/ZSkWQ2NXq/","https://vt.tiktok.com/ZSkWC8YTH/",
+                    "https://vt.tiktok.com/ZSk7bYYsa/","https://vt.tiktok.com/ZSk7pDTGS/","https://vt.tiktok.com/ZSkcPTTJE/",
+                    "https://vt.tiktok.com/ZSBLWqQAw/","https://vt.tiktok.com/ZSBL7DJUj/","https://vt.tiktok.com/ZSBLWqQAw/",
+                    "https://vt.tiktok.com/ZSBL7DJUj/","https://vt.tiktok.com/ZSBY324Pu/","https://vt.tiktok.com/ZSkofs1bL/",
+                    "https://vt.tiktok.com/ZSB1XsnuV/","https://vt.tiktok.com/ZSkoPGNJ6/","https://vt.tiktok.com/ZSB1S1tke/",
+                    "https://vt.tiktok.com/ZSHbShqHbgY7K-h3Uii/","https://vt.tiktok.com/ZSB6gyC83/"
+                ]
+            },
+            { 
+                name: { ar: "نينجا", en: "Ninja" }, 
+                description: {
+                    ar: "حملة لمطعم نينجا بتجربة يابانية تفاعلية على تيك توك.",
+                    en: "Campaign for Ninja restaurant with interactive Japanese-themed content on TikTok."
+                },
+                links: [
+                    "https://vt.tiktok.com/ZSDh8pFPn/","https://vt.tiktok.com/ZSDroQoX4/","https://vt.tiktok.com/ZSDroqsb8/",
+                    "https://vt.tiktok.com/ZSDh84a4F/","https://vt.tiktok.com/ZSDh8yN6g/","https://vt.tiktok.com/ZSDk5KWuu/",
+                    "https://vt.tiktok.com/ZSDh1184t/","https://vt.tiktok.com/ZSDh1NeGV/","https://vt.tiktok.com/ZSDh1MDRS/",
+                    "https://vt.tiktok.com/ZSDDnmWTf/","https://vt.tiktok.com/ZSDh16fcb/","https://vt.tiktok.com/ZSDrotG2Q/",
+                    "https://vt.tiktok.com/ZSDh11PAx/","https://vt.tiktok.com/ZSDh12Yaw/","https://vt.tiktok.com/ZSDh1RXWg/",
+                    "https://vt.tiktok.com/ZSDronpLC/","https://vt.tiktok.com/ZSDro3dtD/","https://vt.tiktok.com/ZSDroEDNA/",
+                    "https://vt.tiktok.com/ZSDh1JCst/","https://vt.tiktok.com/ZSDhLnaCr/","https://vt.tiktok.com/ZSDSPQVJk/",
+                    "https://vt.tiktok.com/ZSDh1rFUg/","https://vt.tiktok.com/ZSDh87TFS/","https://vt.tiktok.com/ZSDkHGqj4/",
+                    "https://vt.tiktok.com/ZSDh1aXKS/","https://vt.tiktok.com/ZSDh1BmVF/","https://vt.tiktok.com/ZSDhJJ9v1/",
+                    "https://vt.tiktok.com/ZSDhLNP6D/","https://vt.tiktok.com/ZSDka4PEr/","https://vt.tiktok.com/ZSDh1boCW/",
+                    "https://vt.tiktok.com/ZSDBjnBh2/","https://vt.tiktok.com/ZSD6eu4rS/","https://vt.tiktok.com/ZSDhJAQjT/",
+                    "https://vt.tiktok.com/ZSDByo9Da/","https://vt.tiktok.com/ZSDkaurpL/","https://vt.tiktok.com/ZSDhJcNUQ/",
+                    "https://vt.tiktok.com/ZSDhJWErD/","https://vt.tiktok.com/ZSDhJtC9o/","https://vt.tiktok.com/ZSDcF7AJE/",
+                    "https://vt.tiktok.com/ZSDk7PPS2/","https://vt.tiktok.com/ZSDhJneuH/","https://vt.tiktok.com/ZSDkaQeKH/",
+                    "https://vt.tiktok.com/ZSDkanuv9/","https://vt.tiktok.com/ZSDhJTe9h/","https://vt.tiktok.com/ZSDkbWtRL/",
+                    "https://vt.tiktok.com/ZSDheuCJf/","https://vt.tiktok.com/ZSDhej49J/","https://vt.tiktok.com/ZSDkax32s/",
+                    "https://vt.tiktok.com/ZSDheu67M/","https://vt.tiktok.com/ZSDhehxdU/","https://vt.tiktok.com/ZSD6dyAY2/",
+                    "https://vt.tiktok.com/ZSDheuvxS/","https://vt.tiktok.com/ZSDheFsWX/","https://vt.tiktok.com/ZSDkaThET/",
+                    "https://vt.tiktok.com/ZSDhefe3o/","https://vt.tiktok.com/ZSDherg7U/","https://vt.tiktok.com/ZSDkmy1tr/",
+                    "https://vt.tiktok.com/ZSDk9Q9Rg/","https://vt.tiktok.com/ZSDecSvRn/","https://vt.tiktok.com/ZSDhe4AN4/",
+                    "https://vt.tiktok.com/ZSDheHC6u/","https://vt.tiktok.com/ZSDkWETgp/","https://vt.tiktok.com/ZSDhddd6V/",
+                    "https://vt.tiktok.com/ZSDhdrL2T/","https://vt.tiktok.com/ZSDhdf3vx/","https://vt.tiktok.com/ZSDkTkXrY/",
+                    "https://vt.tiktok.com/ZSDhRbL9b/","https://vt.tiktok.com/ZSDhdY112/","https://vt.tiktok.com/ZSDhdh3NT/",
+                    "https://vt.tiktok.com/ZSDhRjJS4/","https://vt.tiktok.com/ZSDhdn51c/","https://vt.tiktok.com/ZSDh8aDCS/",
+                    "https://vt.tiktok.com/ZSDhdxs3y/","https://vt.tiktok.com/ZSDhdujgv/","https://vt.tiktok.com/ZSD66jm9R/",
+                    "https://vt.tiktok.com/ZSDhdEhSK/","https://vt.tiktok.com/ZSDhRd1xw/","https://vt.tiktok.com/ZSDhR19Y9/",
+                    "https://vt.tiktok.com/ZSDhRL4sE/","https://vt.tiktok.com/ZSDhRBjMp/","https://vt.tiktok.com/ZSDhR1yJc/",
+                    "https://vt.tiktok.com/ZSDhRRCNe/","https://vt.tiktok.com/ZSDhdwBdb/","https://vt.tiktok.com/ZSDhRhoYx/",
+                    "https://vt.tiktok.com/ZSDhRS36B/","https://vt.tiktok.com/ZSDhRYXNG/","https://vt.tiktok.com/ZSD6JXokU/",
+                    "https://vt.tiktok.com/ZSDkmAfVM/","https://vt.tiktok.com/ZSDhRpXrr/","https://vt.tiktok.com/ZSDhRK2kv/",
+                    "https://vt.tiktok.com/ZSD3cJDVx/","https://vt.tiktok.com/ZSDkmy4Ro/","https://vt.tiktok.com/ZSDhRwR6E/",
+                    "https://vt.tiktok.com/ZSDKaQDut/","https://vt.tiktok.com/ZSDhN1oUd/","https://vt.tiktok.com/ZSDdxuKTU/",
+                    "https://vt.tiktok.com/ZSDvp6B8F/","https://vt.tiktok.com/ZSDcMUwxq/","https://vt.tiktok.com/ZSDTVdpKA/",
+                    "https://vt.tiktok.com/ZSDcCdoTf/"
+                ]
+            },
+            { 
+                name: { ar: "مطعم ميشبل", en: "Michele Restaurant" }, 
+                description: {
+                    ar: "حملة لمطعم ميشبل لعرض الأطباق الإيطالية بمحتوى جذاب على تيك توك.",
+                    en: "Campaign for Michele restaurant showcasing Italian dishes with appealing TikTok content."
+                },
+                links: [
+                    "https://vt.tiktok.com/ZSSRPRwA4/","https://vt.tiktok.com/ZSSFTfy8b/","https://vt.tiktok.com/ZSSdyL3T7/",
+                    "https://vt.tiktok.com/ZSSFK1f67/","https://vt.tiktok.com/ZSSFKMLtX/","https://vt.tiktok.com/ZSSLtnFja/",
+                    "https://vt.tiktok.com/ZSSYLyoA2/","https://vt.tiktok.com/ZSSLt53rx/","https://vt.tiktok.com/ZSSdy8NQW/",
+                    "https://vt.tiktok.com/ZSSYFtTDF/","https://vt.tiktok.com/ZSSYjusVa/","https://vt.tiktok.com/ZSSYLyoA2/",
+                    "https://vt.tiktok.com/ZSS8NCEps/","https://vt.tiktok.com/ZSSdyCkRv/","https://vt.tiktok.com/ZSSLtnfrB/",
+                    "https://vt.tiktok.com/ZSSY2CSH8/","https://vt.tiktok.com/ZSSYL3p25/","https://vt.tiktok.com/ZSSR7UjSU/",
+                    "https://vt.tiktok.com/ZSSNMTfUc/","https://vt.tiktok.com/ZSSYMTAKH/","https://vt.tiktok.com/ZSSYuYR9g/",
+                    "https://vt.tiktok.com/ZSSYFnqwr/","https://vt.tiktok.com/ZSSYCY5no/","https://vt.tiktok.com/ZSSYDx9nJ/",
+                    "https://vt.tiktok.com/ZSSNW8WTd/"
+                ]
+            },
+            { 
+                name: { ar: "كلاج", en: "College" }, 
+                description: {
+                    ar: "حملة لمطعم كلاج موجهة لطلاب الجامعات والشباب.",
+                    en: "Campaign for College restaurant targeting students and youth."
+                },
+                links: [
+                    "https://vt.tiktok.com/ZSBVMnRw6/","https://vt.tiktok.com/ZSBVMKYQ6/","https://vt.tiktok.com/ZSBVMwMHc/",
+                    "https://vt.tiktok.com/ZSBVreunv/","https://vt.tiktok.com/ZSkvJFmxQ/","https://vt.tiktok.com/ZSkweBG3e/",
+                    "https://vt.tiktok.com/ZSBVr4EuD/","https://vt.tiktok.com/ZSkTKPYYd/","https://vt.tiktok.com/ZSBVrGqmR/",
+                    "https://vt.tiktok.com/ZSBVrKn2N/","https://vt.tiktok.com/ZSBVhNaDq/","https://vt.tiktok.com/ZSBVrEh2U/",
+                    "https://vt.tiktok.com/ZSk3t7f4F/","https://vt.tiktok.com/ZSBVhhYck/","https://vt.tiktok.com/ZSBVhYStg/",
+                    "https://vt.tiktok.com/ZSBVh61jR/","https://vt.tiktok.com/ZSk3tP7tL/","https://vt.tiktok.com/ZSkTeAjhX/",
+                    "https://vt.tiktok.com/ZSB1Q7cNc/","https://vt.tiktok.com/ZSkKU39py/","https://vt.tiktok.com/ZSkvVLGwD/",
+                    "https://vt.tiktok.com/ZSkoUtHAt/","https://vt.tiktok.com/ZSkcbPsGj/"
+                ]
+            },
+            { 
+                name: { ar: "غداء صويخات", en: "Sawaikh Lunch" }, 
+                description: {
+                    ar: "حملة وجبات غداء لمطعم صويخات مع تركيز على الجودة وسرعة التوصيل.",
+                    en: "Lunch campaign for Sawaikh restaurant focusing on quality and fast delivery."
+                },
+                links: [
+                    "https://vt.tiktok.com/ZSD7MqBHy/","https://vt.tiktok.com/ZSDtQ55VH/","https://vt.tiktok.com/ZSDtXFc7d/",
+                    "https://vt.tiktok.com/ZSDWS2MHB/","https://vt.tiktok.com/ZSD7retqV/","https://vt.tiktok.com/ZSDWSe7db/",
+                    "https://vt.tiktok.com/ZSDWtLwM7/","https://vt.tiktok.com/ZSDcfBXgS/","https://vt.tiktok.com/ZSDW7dkCk/",
+                    "https://vt.tiktok.com/ZSDvrRN3o/","https://vt.tiktok.com/ZSD7aJVgM/","https://vt.tiktok.com/ZSD7MoWWY/",
+                    "https://vt.tiktok.com/ZSUR7VjNX/","https://vt.tiktok.com/ZSD7ad83x/","https://vt.tiktok.com/ZSD7FJg1F/",
+                    "https://vt.tiktok.com/ZSD7eQYE7/","https://vt.tiktok.com/ZSDWwPjcs/","https://vt.tiktok.com/ZSD7arg4t/",
+                    "https://vt.tiktok.com/ZSD79JqYs/","https://vt.tiktok.com/ZSD3YHrpm/","https://vt.tiktok.com/ZSDchd9Qq/",
+                    "https://vt.tiktok.com/ZSU1yHkaA/","https://vt.tiktok.com/ZSDcUonye/","https://vt.tiktok.com/ZSDcawSgP/",
+                    "https://vt.tiktok.com/ZSDcPRGGA/","https://vt.tiktok.com/ZSDc6fFHx/","https://vt.tiktok.com/ZSDcVU9EJ/",
+                    "https://vt.tiktok.com/ZSD37KX3r/","https://vt.tiktok.com/ZSURhsAar/","https://vt.tiktok.com/ZSUJvhQnA/",
+                    "https://vt.tiktok.com/ZSUJKvrC5/","https://vt.tiktok.com/ZSUJ3wpmC/","https://vt.tiktok.com/ZSUJTJ8eQ/",
+                    "https://vt.tiktok.com/ZSUJTFWtV/","https://vt.tiktok.com/ZSUJTjVGU/","https://vt.tiktok.com/ZSUJEqes7/",
+                    "https://vt.tiktok.com/ZSUJTk34M/","https://vt.tiktok.com/ZSUJTMBMD/","https://vt.tiktok.com/ZSUJTkXRs/",
+                    "https://vt.tiktok.com/ZSULd1ggE/","https://vt.tiktok.com/ZSULSonp3/","https://vt.tiktok.com/ZSULdjpRq/",
+                    "https://vt.tiktok.com/ZSULdhWQ1/","https://vt.tiktok.com/ZSULdAf6X/","https://vt.tiktok.com/ZSULnN1X3/",
+                    "https://vt.tiktok.com/ZSULdDtA6/","https://vt.tiktok.com/ZSULdkdA6/","https://vt.tiktok.com/ZSU88r3sF/"
+                ]
+            }
         ];
 
-        // Mobile Menu Toggle
-        document.querySelector('.mobile-menu').addEventListener('click', function() {
+        // Mobile menu
+        document.querySelector('.mobile-menu').addEventListener('click', () => {
             document.querySelector('nav ul').classList.toggle('show');
         });
 
-        // Language Toggle
-        document.getElementById('langToggle').addEventListener('click', function() {
+        // Language toggle
+        document.getElementById('langToggle').addEventListener('click', function () {
             const isArabic = document.documentElement.lang === 'ar';
-            
+
             if (isArabic) {
-                // Switch to English
                 document.documentElement.lang = 'en';
                 document.documentElement.dir = 'ltr';
-                
-                // Hide Arabic text, show English
                 document.querySelectorAll('.ar-text').forEach(el => el.style.display = 'none');
                 document.querySelectorAll('.en-text').forEach(el => el.style.display = 'inline');
-                
-                // Update language button
                 this.querySelector('.ar-text').style.display = 'none';
                 this.querySelector('.en-text').style.display = 'inline';
             } else {
-                // Switch to Arabic
                 document.documentElement.lang = 'ar';
                 document.documentElement.dir = 'rtl';
-                
-                // Hide English text, show Arabic
                 document.querySelectorAll('.en-text').forEach(el => el.style.display = 'none');
                 document.querySelectorAll('.ar-text').forEach(el => el.style.display = 'inline');
-                
-                // Update language button
                 this.querySelector('.en-text').style.display = 'none';
                 this.querySelector('.ar-text').style.display = 'inline';
             }
-            
-            // Close mobile menu
+
             document.querySelector('nav ul').classList.remove('show');
+            loadCampaigns();
         });
 
-        // Smooth Scrolling for Navigation Links
+        // Smooth scroll nav
         document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
+                if (targetId === '#') return;
                 const targetElement = document.querySelector(targetId);
-                if(targetElement) {
+                if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
-                    // Close mobile menu after clicking a link
                     document.querySelector('nav ul').classList.remove('show');
-                    
-                    // Update active link
-                    document.querySelectorAll('nav a').forEach(link => {
-                        link.classList.remove('active');
-                    });
+                    document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
                     this.classList.add('active');
                 }
             });
         });
 
-        // Header Background on Scroll
-        window.addEventListener('scroll', function() {
+        // Header scroll
+        window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
-            if(window.scrollY > 100) {
+            if (window.scrollY > 100) {
                 header.classList.add('header-scrolled');
             } else {
                 header.classList.remove('header-scrolled');
             }
-            
-            // Update active nav link based on scroll position
             updateActiveNavLink();
         });
 
-        // Form Submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        // Contact form
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
             const isArabic = document.documentElement.lang === 'ar';
             alert(isArabic ? 'شكراً لتواصلك! سأرد عليك في أقرب وقت ممكن.' : 'Thank you for contacting me! I will respond as soon as possible.');
             this.reset();
         });
 
-        // Animation on Scroll
+        // Animations on scroll
         function animateOnScroll() {
             const elements = document.querySelectorAll('.animate__animated');
-            
             elements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
                 const elementVisible = 150;
-                
                 if (elementTop < window.innerHeight - elementVisible) {
                     element.classList.add('animate__fadeInUp');
                 }
             });
         }
-
         window.addEventListener('scroll', animateOnScroll);
-        
-        // Initial call to animate elements in view on page load
         animateOnScroll();
 
-        // Update active navigation link based on scroll position
+        // Active nav link
         function updateActiveNavLink() {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('nav a');
-            
             let current = '';
-            
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
                 if (window.scrollY >= (sectionTop - 100)) {
                     current = section.getAttribute('id');
                 }
             });
-            
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === `#${current}`) {
@@ -1657,40 +1597,42 @@
             });
         }
 
-        // Load Campaigns
+        // Render campaigns
         function loadCampaigns() {
-            const projectsGrid = document.querySelector('.projects-grid');
-            projectsGrid.innerHTML = '';
-            
+            const container = document.getElementById('campaignsContainer');
+            container.innerHTML = '';
             campaigns.forEach(campaign => {
-                const projectCard = document.createElement('div');
-                projectCard.className = 'project-card animate__animated animate__fadeInUp';
-                
-                const randomLink = campaign.links[Math.floor(Math.random() * campaign.links.length)];
-                
-                projectCard.innerHTML = `
-                    <div class="project-img">
-                        <i class="fab fa-tiktok"></i>
+                const card = document.createElement('div');
+                card.className = 'campaign-card animate__animated animate__fadeInUp';
+
+                card.innerHTML = `
+                    <div class="campaign-header">
+                        <div class="campaign-title ar-text">${campaign.name.ar}</div>
+                        <div class="campaign-title en-text" style="display: none;">${campaign.name.en}</div>
+                        <div class="campaign-count">${campaign.links.length}</div>
                     </div>
-                    <div class="project-info">
-                        <h3 class="ar-text">${campaign.name.ar}</h3>
-                        <h3 class="en-text" style="display: none;">${campaign.name.en}</h3>
-                        <p class="ar-text">حملة ترويجية على تيك توك</p>
-                        <p class="en-text" style="display: none;">TikTok promotional campaign</p>
-                        <a href="${randomLink}" class="project-link" target="_blank">
-                            <i class="fab fa-tiktok"></i>
-                            <span class="ar-text">عرض الحملة</span>
-                            <span class="en-text" style="display: none;">View Campaign</span>
-                        </a>
+                    <div class="campaign-description">
+                        <p class="ar-text">${campaign.description.ar}</p>
+                        <p class="en-text" style="display: none;">${campaign.description.en}</p>
+                    </div>
+                    <div class="campaign-links">
+                        ${campaign.links.map((link, index) => `
+                            <div class="campaign-link-item">
+                                <span class="link-number">${index + 1}</span>
+                                <a href="${link}" target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt link-icon"></i>
+                                    <span class="link-text ar-text">رابط الفيديو ${index + 1}</span>
+                                    <span class="link-text en-text" style="display: none;">Video Link ${index + 1}</span>
+                                </a>
+                            </div>
+                        `).join('')}
                     </div>
                 `;
-                
-                projectsGrid.appendChild(projectCard);
+                container.appendChild(card);
             });
         }
 
-        // Initialize the page
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', () => {
             loadCampaigns();
         });
     </script>
